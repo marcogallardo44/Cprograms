@@ -1,0 +1,56 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+bool all_the_same(double x, double y, double z)
+{
+	if ((x == y) && (y == z))
+	{
+		return true;
+	
+	}
+	else
+	{
+		return false;
+	}
+}
+bool all_different(double x, double y, double z)
+{
+	if ((x != y) && (y != z))
+	{
+		return true;
+	}
+	else return false;
+}
+bool sorted(double x, double y, double z)
+{
+	if (x > y && y > z)
+	{
+		return true;
+	}
+	else return false;
+}
+
+
+
+int main()
+{
+	double a;
+	double b;
+	double c;
+
+	cin >> a >> b >> c;
+	cout << "All are equal: " << all_the_same(a, b, c) << endl;
+	cout << "All are different: " << all_different(a, b ,c) << endl;
+	cout << "All are sorted: " << sorted(a, b, c) << endl;
+
+
+
+	system("pause");
+    return 0;
+}
+

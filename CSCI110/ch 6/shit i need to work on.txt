@@ -1,0 +1,114 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+int input(double scores[], int size)
+{
+	int current_size = 0;
+	cout << "Please enter values, Q to quit:" << endl;
+	bool more = true;
+	while (more)
+	{
+		double input;
+		cin >> input;
+		if(cin.fail())
+		{
+			more = false;
+		}
+		else if (current_size < size)
+		{
+			scores[current_size] = input;
+			current_size++;
+		}
+	}
+	return current_size;
+}
+
+double finding_mini(double scores[], int size) 
+{
+	
+
+	double mini = 9000;
+	for (int i = 1; i < size; i++)
+	{
+		if (scores[i] < mini)
+		{
+			mini = scores[i];
+		}
+	}
+	return mini;
+}
+
+void remove(double scores[], int& size, double mini)
+{
+	int pos = 0;
+	bool found = false;
+
+	while(!found)
+	{
+		if (scores[pos] == mini)
+		{
+			found = true;
+		}
+		else 
+		{
+			pos++;
+		}
+
+		if(found)
+		{
+			for (int i = pos + 1; i < size; i++)
+			{
+				(scores[pos] = scores[i]);
+				pos++;
+			}
+
+		}
+	}
+	size--;
+}
+
+double sum(double scores[], int size)
+{
+	double total = 0;
+
+	for (int i = 0; i < size; i++)
+	{
+		total = total + scores[i];
+	}
+	return total;	
+}
+
+double average(double total, int size)
+{
+	double average = 0;
+	average = total / size;
+	return average;
+}
+
+
+
+
+int main()
+{
+	const int capacity = 1000;
+	double scores[capacity];
+	int size = 0;
+	size = input(scores, size);
+	double mini = finding_mini(scores, size);
+	remove(scores, size, mini);
+	double total = sum(scores, size);
+	
+
+	cout << "The total is: " << total << endl;
+	cout << "The average is: " << average(total, size) << endl;
+
+
+	system("pause");
+	return 0;
+}
+

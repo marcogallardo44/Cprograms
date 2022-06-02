@@ -1,0 +1,144 @@
+#include "stdafx.h"
+#include <iostream>
+
+// Lab 2: IntegerSet.h
+// Header file for class IntegerSet
+#ifndef STUDENT_H 
+#define STUDENT_H
+// class Student definition 
+
+class Student
+{
+public:
+	Student(const char *);
+	~Student();
+	void displayGrades() const;
+	Student addGrade(int) const;
+	static int getNumStudents();
+private:
+	int *grades;
+	char *name;
+	int numGrades;
+	int idNum;
+	static int numStudents;
+
+
+}; // end class IntegerSet
+#endif
+
+----------------------------------------------------
+
+// Lab 2: IntegerSet.cpp
+// Member-function definitions for class IntegerSet.
+#include "stdafx.h"
+#include <iostream>
+#include <iomanip>
+#include "Student.h"
+#include "Student.h"
+using namespace std;
+
+#include <new> 
+static int numStudents = 0;
+
+// constructor
+Student::Student(const char *nPtr)
+{
+	grades = new int[1];
+	grades[0] = 0;
+	name = new char[strlen(nPtr) + 1];
+	strcpy(name, nPtr);
+	numGrades = 0;
+	++numStudents;
+
+	cout << "A student has been added\n";
+} // end class Student constructor 
+
+
+  // destructor 
+Student::~Student()
+{
+	cout << name << " has been deleted\n";
+	delete grades;
+	delete name;
+	--numStudents;
+} // end class Student destructor
+
+  // function displayGrades definition
+void Student::displayGrades() const
+{
+	cout << "Here are the grades for " << name << endl;
+
+	// output each grade 
+	for (int i = 0; i < numGrades; i++)
+		cout << setw(5) << grades[i];
+	cout << endl << endl;
+} // end function displayGrades
+
+  // function addGrade definition 
+Student Student::addGrade(int grade) const
+{
+	int *temp = new int[numGrades + 1];
+
+	for (int i = 0; i < numGrades; i++)
+		temp[i] = grades[i];
+
+	temp[numGrades] = grade;
+	*grades = *temp;
+	
+	
+	return *this;
+} // end function addGrade 
+
+  // function getNumStudents definition
+int Student::getNumStudents()
+{
+	return numStudents;
+} // end function getNumStudents
+
+-----------------------------------------------------
+
+
+
+#include "stdafx.h"
+#include <iostream>
+#include "Student.h" // IntegerSet class definition
+
+using namespace std;
+
+int main()
+{
+	cout << "There are currently " << Student::getNumStudents()
+		<< " students\n\n";
+
+	Student *s1Ptr = new Student("Student 1");
+
+	s1Ptr->addGrade(100).addGrade(75).addGrade(89);
+	s1Ptr->displayGrades();
+
+	Student *s2Ptr = new Student("Student 2");
+	s2Ptr->addGrade(83).addGrade(92);
+	s2Ptr->displayGrades();
+
+	Student *s3 = new Student("Student 3");
+	s3->addGrade(62).addGrade(91);
+	s3->displayGrades();
+
+	cout << "There are currently " << Student::getNumStudents()
+		<< " students\n\n";
+
+	delete[] s2Ptr;
+	delete[] s1Ptr;
+
+
+	system("pause");
+	return 0;
+}
+
+
+
+
+
+
+
+
+

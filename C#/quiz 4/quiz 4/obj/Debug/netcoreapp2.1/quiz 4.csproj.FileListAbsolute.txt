@@ -1,0 +1,11 @@
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\quiz 4\quiz 4\obj\Debug\netcoreapp2.1\quiz 4.csprojAssemblyReference.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\quiz 4\quiz 4\obj\Debug\netcoreapp2.1\quiz 4.csproj.CoreCompileInputs.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\quiz 4\quiz 4\obj\Debug\netcoreapp2.1\quiz 4.AssemblyInfoInputs.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\quiz 4\quiz 4\obj\Debug\netcoreapp2.1\quiz 4.AssemblyInfo.cs
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\quiz 4\quiz 4\bin\Debug\netcoreapp2.1\quiz 4.deps.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\quiz 4\quiz 4\bin\Debug\netcoreapp2.1\quiz 4.runtimeconfig.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\quiz 4\quiz 4\bin\Debug\netcoreapp2.1\quiz 4.runtimeconfig.dev.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\quiz 4\quiz 4\bin\Debug\netcoreapp2.1\quiz 4.dll
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\quiz 4\quiz 4\bin\Debug\netcoreapp2.1\quiz 4.pdb
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\quiz 4\quiz 4\obj\Debug\netcoreapp2.1\quiz 4.dll
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\quiz 4\quiz 4\obj\Debug\netcoreapp2.1\quiz 4.pdb

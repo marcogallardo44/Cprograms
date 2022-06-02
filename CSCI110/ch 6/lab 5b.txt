@@ -1,0 +1,109 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+/*
+	Program Description:
+	This program checks for duplicates in an array and deletes them, creating a new array
+	Input Variables:
+		input array a
+	Process Flow:
+		creates three functions, one for input, one for removing douplicates
+		and one for printing, then outputs if there are duplicates
+	output variables:
+		outputs the new array without duplicates
+*/
+
+#include "stdafx.h"
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int input(double a[], int capacity)
+{
+	const int CAPACITY = 1000;
+	a[CAPACITY];
+	int current_size = 0;
+
+	cout << "Please enter values, Q to quit:" << endl;
+	double input;
+	while (cin >> input)
+	{
+		if (current_size < CAPACITY)
+		{
+			a[current_size] = input;
+			
+			current_size++;
+		}
+	}
+	
+	return current_size;
+}
+
+void remove_douplicates(double a[], int& size)
+{
+	int b = 0;
+
+	if (size < 0)
+	{
+		return;
+	}
+	for (int i = 0; i < size; i++)
+	{
+		for (int j = i + 1; j < size;)
+		{
+			if (a[i] == a[j])
+			{
+				int k = j;
+				while (k < size + 1)
+				{
+					b = a[k + 1];
+					a[k + 1] = a[k];
+					a[k] = b;
+					k++;
+				}
+				size--;
+			}
+			else
+			{
+				j++;
+			}
+		}
+	}
+	return;
+}
+void print(double a[], int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		if (i > 0) { cout << ", "; }
+		cout << a[i];
+	}
+	cout << endl;
+}
+
+
+
+
+
+int main()
+{
+	const int capacity = 1000;
+	double a[capacity];
+	int size = input(a, capacity);
+	cout << "You input these numbers: "; print(a, size);
+	cout << endl;
+	cout << endl;
+	cout << "There were some douplicates, so here is the array without them: ";
+	remove_douplicates(a, size);
+	
+	print(a, size);
+	
+
+	
+
+
+
+
+	system("pause");
+	return 0;
+}
+

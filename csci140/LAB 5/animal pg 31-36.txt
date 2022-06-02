@@ -1,0 +1,354 @@
+// Debugging: Animal.h
+#ifndef ANIMAL_H
+#define ANIMAL_H
+#include <string>
+using namespace std;
+// class Animal definition
+class Animal
+{
+public:
+Animal( const int = 0, const int = 0 );
+void setHeight( int );
+int getHeight() const;
+void setWeight( int );
+int getWeight() const;
+string getName() const;
+void print() const;
+private:
+int height;
+int weight;
+}; // end class Animal
+#endif // ANIMAL_H
+
+--------------------------------------
+
+// Debugging: Animal.cpp
+#include <iostream>
+using namespace std;
+#include "Animal.h"
+// default constructor
+Animal::Animal( const int h, const int w )
+{
+height = h;
+weight = w;
+} // end class Animal constructor
+// function print definition
+void Animal::print() const
+{
+cout << "This animal's height and weight are as follows\n"
+<< "Height: " << height << "\tWeight: " << weight
+<< endl << endl;
+} // end function print
+// return height
+int Animal::getHeight() const
+{
+return height;
+} // end function getHeight
+// return weight
+int Animal::getWeight() const
+{
+return weight;
+} // end function getWeight
+// function print definition
+void Animal::setHeight( const int h )
+{
+height = h;
+} // end function setHeight
+// function print definition
+void Animal::setWeight( const int w )
+{
+weight = w;
+} // end function setWeight
+// return name
+string Animal::getName() const
+{
+return name;
+} // end function getName
+
+-------------------------------------------------------------------
+
+// Debugging: Lion.h
+#ifndef LION_H
+#define LION_H
+#include "Animal.h"
+// class Lion definition
+class Lion
+{
+public:
+Lion( const int = 0, const int = 0 );
+void print() const;
+}; // end class Lion
+#endif // LION_H
+
+----------------------------------------------------------
+
+// Debugging: Lion.cpp
+#include <iostream>
+using namespace std;
+#include "Lion.h"
+// default constructor
+Lion::Lion( const int h, const int w )
+: Animal( h, w )
+{
+// empty
+} // end class Lion constructor
+// function print definition
+void Lion::print() const
+{
+cout << "This animal is a lion\n";
+print();
+} // end function print
+
+--------------------------------------------------------
+
+// Debugging: Dog.h
+#ifndef DOG_H
+#define DOG_H
+#include "Animal.h"
+// class Dog definition
+class Dog : public Animal
+{
+public:
+Dog( const int, const int, string = "Toto" );
+void Print() const;
+void setName( string );
+private:
+string name;
+}; // end class Dog
+#endif // DOG_H
+
+-------------------------------------------------------
+
+// Debugging: Dog.cpp
+#include <iostream>
+using namespace std;
+#include "Dog.h"
+// constructor
+Dog::Dog( const int h, const int w, string n )
+: Animal( h, w )
+{
+setName( n );
+} // end class Dog constructor
+// function setName definition
+void Dog::setName( const char * n )
+{
+n = name;
+} // end function setName
+// function print definition
+void Dog::Print() const
+{
+cout << "This animal is a dog, its name is: " << name << endl;
+print();
+} // end function print
+
+---------------------------------------------------------------------
+
+// Debugging: debugging.cpp
+#include <iostream>
+using namespace std;
+#include "Animal.h"
+#include "Lion.h"
+int main()
+{
+Animal a1( 0, 0 );
+Dog d1( 60, 120, "Fido" );
+Dog d2;
+Lion lion1( 45, 300 );
+a1.print();
+d1.print();
+d2.print();
+lion1.print();
+a1 = d1;
+cout << "Animal 1 now has the same height and weight "
+<< "as dog 1\n";
+a1.print();
+d2 = a1;
+cout << "Dog 2 now has the same height and weight as animal 1\n"
+d2.print();
+} // end main
+------------------------------------------------------------------------------
+CORRECT sorta
+
+// Debugging: Animal.h
+#ifndef ANIMAL_H
+#define ANIMAL_H
+#include <string>
+using namespace std;
+// class Animal definition
+class Animal
+{
+public:
+	Animal(const int = 0, const int = 0);
+	void setHeight(int);
+	int getHeight() const;
+	void setWeight(int);
+	int getWeight() const;
+	string getName() const;
+	void print() const;
+private:
+	int height;
+	int weight;
+	string name;
+}; // end class Animal
+#endif // ANIMAL_H
+
+-----------------------------------------------------------------------
+
+// Debugging: Animal.cpp
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+#include "Animal.h"
+// default constructor
+Animal::Animal(const int h, const int w)
+{
+	height = h;
+	weight = w;
+} // end class Animal constructor
+  // function print definition
+void Animal::print() const
+{
+	cout << "This animal's height and weight are as follows\n"
+		<< "Height: " << height << "\tWeight: " << weight
+		<< endl << endl;
+} // end function print
+  // return height
+int Animal::getHeight() const
+{
+	return height;
+} // end function getHeight
+  // return weight
+int Animal::getWeight() const
+{
+	return weight;
+} // end function getWeight
+  // function print definition
+void Animal::setHeight(const int h)
+{
+	height = h;
+} // end function setHeight
+  // function print definition
+void Animal::setWeight(const int w)
+{
+	weight = w;
+} // end function setWeight
+  // return name
+string Animal::getName() const
+{
+	return name;
+} // end function getName
+
+-----------------------------------------------------------------------
+
+#ifndef LION_H
+#define LION_H
+#include "Animal.h"
+// class Lion definition
+class Lion:public Animal
+{
+public:
+	Lion(const int = 0, const int = 0);
+	void print() const;
+}; // end class Lion
+#endif // LION_H
+
+
+-----------------------------------------------------------------------
+
+
+// Debugging: Lion.cpp
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+#include "Lion.h"
+// default constructor
+Lion::Lion(const int h, const int w)
+	: Animal(h, w)
+{
+	// empty
+} // end class Lion constructor
+  // function print definition
+void Lion::print() const
+{
+	cout << "This animal is a lion";
+	print();
+} // end function print
+
+-----------------------------------------------------------------------
+
+#ifndef DOG_H
+#define DOG_H
+#include "Animal.h"
+// class Dog definition
+class Dog : public Animal
+{
+public:
+	Dog(const int, const int, string = "Toto");
+	void Print() const;
+	void setName(string);
+private:
+	string name;
+}; // end class Dog
+#endif // DOG_H
+
+
+-----------------------------------------------------------------------
+
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+#include "Dog.h"
+// constructor
+Dog::Dog(const int h, const int w, string n)
+	: Animal(h, w)
+{
+	setName(n);
+} // end class Dog constructor
+  // function setName definition
+void Dog::setName(string n)
+{
+	n = name;
+} // end function setName
+  // function print definition
+void Dog::Print() const
+{
+	cout << "This animal is a dog, its name is: " << name << endl;
+	print();
+} // end function print
+
+
+
+-----------------------------------------------------------------------
+
+// ConsoleApplication4.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+#include "Animal.h"
+#include "Lion.h"
+#include "Dog.h"
+int main()
+{
+	Animal a1(0, 0);
+	Dog d1(60, 120, "Fido");
+	Dog d2(20,30,"halo");
+	Lion lion1(45, 300);
+	a1.print();
+	d1.print();
+	d2.print();
+	
+	a1 = d1;
+	cout << "Animal 1 now has the same height and weight "
+		<< "as dog 1\n";
+	a1.print();
+	a1 = d1;
+	cout << "Dog 2 now has the same height and weight as animal 1\n";
+		d1.print();
+
+
+	system("pause");
+	return 0;
+}
+

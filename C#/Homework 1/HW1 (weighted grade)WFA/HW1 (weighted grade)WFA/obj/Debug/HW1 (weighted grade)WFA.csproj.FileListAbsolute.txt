@@ -1,0 +1,10 @@
+G:\Marco USB Backup\C#\HW1 (weighted grade)WFA\HW1 (weighted grade)WFA\bin\Debug\HW1 (weighted grade)WFA.exe.config
+G:\Marco USB Backup\C#\HW1 (weighted grade)WFA\HW1 (weighted grade)WFA\bin\Debug\HW1 (weighted grade)WFA.exe
+G:\Marco USB Backup\C#\HW1 (weighted grade)WFA\HW1 (weighted grade)WFA\bin\Debug\HW1 (weighted grade)WFA.pdb
+G:\Marco USB Backup\C#\HW1 (weighted grade)WFA\HW1 (weighted grade)WFA\obj\Debug\HW1 (weighted grade)WFA.csprojAssemblyReference.cache
+G:\Marco USB Backup\C#\HW1 (weighted grade)WFA\HW1 (weighted grade)WFA\obj\Debug\HW1__weighted_grade_WFA.Form1.resources
+G:\Marco USB Backup\C#\HW1 (weighted grade)WFA\HW1 (weighted grade)WFA\obj\Debug\HW1__weighted_grade_WFA.Properties.Resources.resources
+G:\Marco USB Backup\C#\HW1 (weighted grade)WFA\HW1 (weighted grade)WFA\obj\Debug\HW1 (weighted grade)WFA.csproj.GenerateResource.cache
+G:\Marco USB Backup\C#\HW1 (weighted grade)WFA\HW1 (weighted grade)WFA\obj\Debug\HW1 (weighted grade)WFA.csproj.CoreCompileInputs.cache
+G:\Marco USB Backup\C#\HW1 (weighted grade)WFA\HW1 (weighted grade)WFA\obj\Debug\HW1 (weighted grade)WFA.exe
+G:\Marco USB Backup\C#\HW1 (weighted grade)WFA\HW1 (weighted grade)WFA\obj\Debug\HW1 (weighted grade)WFA.pdb

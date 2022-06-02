@@ -1,0 +1,161 @@
+// BIGINT_add_and_multiply.cpp, Marco Gallardo, c++ Language and Objects
+//Project #2 Question 2. MS Visual Studio 2017, 10/30/17
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <vector>
+
+
+
+using namespace std;
+
+
+string findSum(string str1, string str2)
+{
+
+	if (str1.length() > str2.length())
+		swap(str1, str2);
+
+
+	string str = "";
+
+
+	int n1 = str1.length(), n2 = str2.length();
+
+
+	reverse(str1.begin(), str1.end());
+	reverse(str2.begin(), str2.end());
+
+	int carry = 0;
+	for (int i = 0; i<n1; i++)
+	{
+
+		int sum = ((str1[i] - '0') + (str2[i] - '0') + carry);
+		str.push_back(sum % 10 + '0');
+
+
+		carry = sum / 10;
+	}
+
+
+	for (int i = n1; i<n2; i++)
+	{
+		int sum = ((str2[i] - '0') + carry);
+		str.push_back(sum % 10 + '0');
+		carry = sum / 10;
+	}
+
+
+	if (carry)
+		str.push_back(carry + '0');
+
+
+	reverse(str.begin(), str.end());
+
+	return str;
+}
+
+
+string findMult(string str1, string str2)
+{
+	int n1 = str1.size();
+	int n2 = str2.size();
+	if (n1 == 0 || n2 == 0)
+		return "0";
+
+
+	vector<int> result(n1 + n2, 0);
+
+
+	int i_n1 = 0;
+	int i_n2 = 0;
+
+
+	for (int i = n1 - 1; i >= 0; i--)
+	{
+		int carry = 0;
+		int n1 = str1[i] - '0';
+
+
+		i_n2 = 0;
+
+
+		for (int j = n2 - 1; j >= 0; j--)
+		{
+
+			int n2 = str2[j] - '0';
+
+
+			int sum = n1*n2 + result[i_n1 + i_n2] + carry;
+
+
+			carry = sum / 10;
+
+
+			result[i_n1 + i_n2] = sum % 10;
+
+			i_n2++;
+		}
+
+
+		if (carry > 0)
+			result[i_n1 + i_n2] += carry;
+
+
+		i_n1++;
+	}
+
+
+	int i = result.size() - 1;
+	while (i >= 0 && result[i] == 0)
+		i--;
+
+
+	if (i == -1)
+		return "0";
+
+
+	string s = "";
+	while (i >= 0)
+		s += std::to_string(result[i--]);
+
+	return s;
+
+
+}
+
+
+int main()
+{
+	string str1;
+	string str2;
+
+	cout << "Please input a large number: ";
+	cin >> str1;
+	cout << "Please input another large number: ";
+	cin >> str2;
+	cout << endl;
+	cout << "SUM: " << findSum(str1, str2) << endl << endl;
+	cout << "MULT: " << findMult(str1, str2) << endl << endl;
+
+
+	system("pause");
+	return main();
+}
+
+//REPORT
+/*This was probably the hardest of the 5 ptoblems
+because i couldnt get my head around how to store
+a big number. Then found out we can use a string,
+which works like an array, to store each indiviual
+number in different spots. Then we can do that for
+another large number. Create 2 free strings that
+will hold the new numbers. Finally we can add
+or mult these numbers and for each number
+greater than 10, we % by 10 to get its far right
+and / by 10 to get the carry. The problems i faces
+was mainly for the mult, not getting the string large
+enough for the extra numbers. I used smaller numbers 
+to show the calculation works correctly, then used
+large numbers to show it stores it correctly*/

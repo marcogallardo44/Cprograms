@@ -1,0 +1,58 @@
+// mathprogram.cpp : Defines the entry point for the console application.
+//
+/* 
+Process description:
+	calculates return on interest
+Author:
+	Marco Gallardo
+Imput Variables:
+	principal- inital money
+	rate- interest rate
+	times per year- number of times per year
+Process flow:
+	imput value for principal
+	imput value for rate
+	imput value for times_per_year
+	imput value for years
+	output value for ROI
+Output variables:
+	ROI - which calculates the total money collected
+*/
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	int principal;
+	
+	double rate;
+	
+	int times_per_year;
+	
+	int years;
+	
+	cout << " Please imput principal ";
+	cin >> principal;
+
+	cout << " Please imput rate ";
+	cin >> rate;
+
+	cout << " Please imput times_per_year ";
+	cin >> times_per_year;
+
+	cout << " Please imput years ";
+	cin >> years;
+
+	double ROI;
+	ROI = principal * pow(1 + rate/times_per_year,years);  
+	cout << "The return on Interest is $" << ROI << endl;
+
+	system("pause");
+	
+	return 0;
+}
+

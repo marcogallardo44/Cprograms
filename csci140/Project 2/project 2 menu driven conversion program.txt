@@ -1,0 +1,72 @@
+// Conversion.cpp, Marco Gallardo, c++ Language and Objects
+//Project #2 Question 1. MS Visual Studio 2017, 10/30/17
+
+#include "stdafx.h"
+#include<iostream>
+#include<string>
+#include<cstdlib>
+#include<random>
+#include<iomanip>
+#include <ctime>
+using namespace std;
+
+double MILES(double x)
+{
+	double kilo;
+	kilo = x * 1.61;
+	return kilo;
+}
+double FEET(double x)
+{
+	double cm;
+	cm = x * .3048;
+	return cm;
+}
+double DEGF(double x)
+{
+	double c;
+	c = (x - 32) * 5 / 9;
+	return c;
+}
+
+
+int main()
+{
+	double x;
+	string input;
+
+	cout << "OPTION: MILES, FEET, DEGF: ";
+	cin >> input;
+
+	if (input == "MILES")
+	{
+		cout << "Please input how many miles you would like to convert: ";
+		cin >> x;
+		cout << MILES(x) << " KILOMETERS." << endl;
+	}
+	if (input == "FEET")
+	{
+		cout << "Please input how many feet you would like to conver: ";
+		cin >> x;
+		cout << FEET(x) << " CENTEMETERS." << endl;
+	}
+	if (input == "DEGF")
+	{
+		cout << "Please input what degree of fahrenheit you would like to convert: ";
+		cin >> x;
+		cout << DEGF(x) << " CELSIUS." << endl;
+	}
+		
+
+
+
+	system("pause");
+    return main();
+}
+
+//REPORT
+/*There was no problems i encountered while programming this.
+The hardest part was finding out what numbers are used for 
+the conversions of each. The only problem i had was remembering to 
+use double for the functions rather than int because they are not
+whole numbers.*/

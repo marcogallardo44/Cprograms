@@ -1,0 +1,11 @@
+G:\Marco USB Backup\C#\HW1 (mile to km)2\HW1 (mile to km)2\bin\Debug\netcoreapp2.1\HW1 (mile to km)2.deps.json
+G:\Marco USB Backup\C#\HW1 (mile to km)2\HW1 (mile to km)2\bin\Debug\netcoreapp2.1\HW1 (mile to km)2.runtimeconfig.json
+G:\Marco USB Backup\C#\HW1 (mile to km)2\HW1 (mile to km)2\bin\Debug\netcoreapp2.1\HW1 (mile to km)2.runtimeconfig.dev.json
+G:\Marco USB Backup\C#\HW1 (mile to km)2\HW1 (mile to km)2\bin\Debug\netcoreapp2.1\HW1 (mile to km)2.dll
+G:\Marco USB Backup\C#\HW1 (mile to km)2\HW1 (mile to km)2\bin\Debug\netcoreapp2.1\HW1 (mile to km)2.pdb
+G:\Marco USB Backup\C#\HW1 (mile to km)2\HW1 (mile to km)2\obj\Debug\netcoreapp2.1\HW1 (mile to km)2.csprojAssemblyReference.cache
+G:\Marco USB Backup\C#\HW1 (mile to km)2\HW1 (mile to km)2\obj\Debug\netcoreapp2.1\HW1 (mile to km)2.csproj.CoreCompileInputs.cache
+G:\Marco USB Backup\C#\HW1 (mile to km)2\HW1 (mile to km)2\obj\Debug\netcoreapp2.1\HW1 (mile to km)2.AssemblyInfoInputs.cache
+G:\Marco USB Backup\C#\HW1 (mile to km)2\HW1 (mile to km)2\obj\Debug\netcoreapp2.1\HW1 (mile to km)2.AssemblyInfo.cs
+G:\Marco USB Backup\C#\HW1 (mile to km)2\HW1 (mile to km)2\obj\Debug\netcoreapp2.1\HW1 (mile to km)2.dll
+G:\Marco USB Backup\C#\HW1 (mile to km)2\HW1 (mile to km)2\obj\Debug\netcoreapp2.1\HW1 (mile to km)2.pdb

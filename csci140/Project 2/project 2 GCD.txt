@@ -1,0 +1,73 @@
+// GCD.cpp, Marco Gallardo, c++ Language and Objects
+//Project #2 Question 3. MS Visual Studio 2017, 10/30/17
+
+#include "stdafx.h"
+#include <iostream>
+#include <algorithm>
+#include <conio.h>
+
+using namespace std;
+int input(int scores[], int capacity)
+{
+	const int CAPACITY = 1000;
+	scores[CAPACITY];
+	int current_size = 0;
+
+	cout << "Please enter values, Q to quit:" << endl;
+	int input;
+	while (cin >> input)
+	{
+		if (current_size < CAPACITY)
+		{
+			scores[current_size] = input;
+			current_size++;
+		}
+	}
+	
+
+
+	return current_size++;
+}
+
+double gcd(int a, int b)
+{
+	
+	if (a < b)
+		return gcd(b, a);
+	if (b == 0)
+		return a;
+	else
+		return gcd(b, a% b);
+
+}
+
+int findGCD(int arr[], int n)
+{
+	int result = arr[0];
+	for (int i = 1; i < n; i++)
+		result = gcd(arr[i], result);
+
+	return result;
+}
+
+
+int main()
+{
+	const int capacity = 1000;
+	int scores[capacity];
+	int size = input(scores, capacity);
+	int gcd = findGCD(scores, size);
+
+	cout << "The GCD is: " << gcd << endl;
+
+	system("pause");
+    return 0;
+}
+
+//REPORT
+/*This problem was not hard because you gave us
+the function to figure out GCD. After that i implimented
+it into another fucntion that runs it through every input 
+number. I also made an input function to input an array.
+The only problem i had was applying the functions to my 
+input array function. But i figured it out */

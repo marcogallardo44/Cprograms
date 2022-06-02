@@ -1,0 +1,29 @@
+// marcostuff.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+
+int main()
+{
+	double price_per_ounce_1;
+	double price_per_ounce_2;
+	double price_per_ounce_3;
+
+	price_per_ounce_1 = 10.2372;
+	price_per_ounce_2 = 117.2;
+	price_per_ounce_3 = 6.9923435;
+	cout << fixed << setprecision (2);
+	cout << setw(8) << price_per_ounce_1 << endl;
+	cout << setw(8) << price_per_ounce_2 << endl;
+	cout << setw(8) << price_per_ounce_3 << endl;
+	cout<< "--------" << endl;
+
+	system("pause");
+	return 0;
+}
+

@@ -1,0 +1,11 @@
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (Search function)\HW 7 (Search function)\bin\Debug\netcoreapp3.0\HW 7 (Search function).exe
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (Search function)\HW 7 (Search function)\bin\Debug\netcoreapp3.0\HW 7 (Search function).deps.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (Search function)\HW 7 (Search function)\bin\Debug\netcoreapp3.0\HW 7 (Search function).runtimeconfig.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (Search function)\HW 7 (Search function)\bin\Debug\netcoreapp3.0\HW 7 (Search function).runtimeconfig.dev.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (Search function)\HW 7 (Search function)\bin\Debug\netcoreapp3.0\HW 7 (Search function).dll
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (Search function)\HW 7 (Search function)\bin\Debug\netcoreapp3.0\HW 7 (Search function).pdb
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (Search function)\HW 7 (Search function)\obj\Debug\netcoreapp3.0\HW 7 (Search function).csprojAssemblyReference.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (Search function)\HW 7 (Search function)\obj\Debug\netcoreapp3.0\HW 7 (Search function).AssemblyInfoInputs.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (Search function)\HW 7 (Search function)\obj\Debug\netcoreapp3.0\HW 7 (Search function).AssemblyInfo.cs
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (Search function)\HW 7 (Search function)\obj\Debug\netcoreapp3.0\HW 7 (Search function).dll
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (Search function)\HW 7 (Search function)\obj\Debug\netcoreapp3.0\HW 7 (Search function).pdb

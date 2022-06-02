@@ -1,0 +1,104 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+/*
+Program Description:
+This program allows user input an array
+then switches the front half to the back half
+Author:
+Marco Gallardo
+Input Variables:
+input array a
+Process Flow:
+uses four functions, one to allow user input variables to create an array
+the next to swap the first half and second half
+the other to are to pring the before and after array
+Output variables:
+outputs the first input array
+outputs the reversed array
+*/
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int input(double scores[], int capacity)
+{
+	const int CAPACITY = 1000;
+	scores[CAPACITY];
+	int current_size = 0;
+
+	cout << "Please enter values, Q to quit:" << endl;
+	double input;
+	while (cin >> input)
+	{
+		if (current_size < CAPACITY)
+		{
+			scores[current_size] = input;
+			current_size++;
+		}
+	}
+	cout << endl;
+	return current_size;
+}
+
+
+void reverse(double* a, int size)
+{
+	double* p = a;
+	double* q = a + size - 1;
+	while (p < q)
+	{
+		double t = *p;
+		*p = *q;
+		*q = t;
+		p++;
+		q--;
+	}
+}
+
+
+
+void printt(double* a, int size)
+{
+	cout << "The reverse of these numbers: ";
+	for (int i = 0; i < size; i++)
+	{
+		cout << *(a + i) << " ";
+	}
+	cout << "\n";
+
+}
+
+void print(double scores[], int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		if (i > 0) { cout << ", "; }
+		cout << scores[i];
+	}
+	cout << endl;
+
+}
+
+
+int main()
+{
+
+	const int capacity = 1000;
+	double scores[capacity];
+
+	int size = input(scores, capacity);
+	double* a;
+	a = scores;
+	cout << "You input these numbers: "; print(scores, size);
+	cout << endl;
+	reverse(a, size);
+	printt(a, size);
+
+
+
+
+	system("pause");
+	return 0;
+}
+

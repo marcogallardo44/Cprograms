@@ -1,0 +1,10 @@
+C:\Users\magallardo1\source\repos\HW 2 (calculator)WFA\HW 2 (calculator)WFA\bin\Debug\HW 2 (calculator)WFA.exe.config
+C:\Users\magallardo1\source\repos\HW 2 (calculator)WFA\HW 2 (calculator)WFA\bin\Debug\HW 2 (calculator)WFA.exe
+C:\Users\magallardo1\source\repos\HW 2 (calculator)WFA\HW 2 (calculator)WFA\bin\Debug\HW 2 (calculator)WFA.pdb
+C:\Users\magallardo1\source\repos\HW 2 (calculator)WFA\HW 2 (calculator)WFA\obj\Debug\HW 2 (calculator)WFA.csprojAssemblyReference.cache
+C:\Users\magallardo1\source\repos\HW 2 (calculator)WFA\HW 2 (calculator)WFA\obj\Debug\HW_2__calculator_WFA.Form1.resources
+C:\Users\magallardo1\source\repos\HW 2 (calculator)WFA\HW 2 (calculator)WFA\obj\Debug\HW_2__calculator_WFA.Properties.Resources.resources
+C:\Users\magallardo1\source\repos\HW 2 (calculator)WFA\HW 2 (calculator)WFA\obj\Debug\HW 2 (calculator)WFA.csproj.GenerateResource.cache
+C:\Users\magallardo1\source\repos\HW 2 (calculator)WFA\HW 2 (calculator)WFA\obj\Debug\HW 2 (calculator)WFA.csproj.CoreCompileInputs.cache
+C:\Users\magallardo1\source\repos\HW 2 (calculator)WFA\HW 2 (calculator)WFA\obj\Debug\HW 2 (calculator)WFA.exe
+C:\Users\magallardo1\source\repos\HW 2 (calculator)WFA\HW 2 (calculator)WFA\obj\Debug\HW 2 (calculator)WFA.pdb

@@ -1,0 +1,128 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+void reverse(double* a, int size)
+{
+	double p1 = a;
+	
+	for (int i = 0; i < size / 2; i++)
+		{
+			*p = *(a + i);
+			*(a + i) = size - (*(a + i) + 1);
+			(size - (*(a + i) + 1)) = *p;
+
+
+
+int main()
+{
+
+	
+
+
+
+
+	system("pause");
+	return 0;
+}
+
+
+
+new one
+
+
+
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int input(double scores[], int capacity)
+{
+	const int CAPACITY = 1000;
+	scores[CAPACITY];
+	int current_size = 0;
+
+	cout << "Please enter values, Q to quit:" << endl;
+	double input;
+	while (cin >> input)
+	{
+		if (current_size < CAPACITY)
+		{
+			scores[current_size] = input;
+			current_size++;
+		}
+	}
+	cout << endl;
+	return current_size;
+}
+void swap(double* a, double* b)
+{
+	double t = *a;
+	*a = *b;
+	*b = t;
+}
+
+void reverse(double* a, int size)
+{
+	double* p = a;
+	double* q = a + size - 1;
+	while (p1 < p2) {
+		swap(p1, p2);
+		p1++;
+		p2--;
+	}
+}
+
+
+
+void printt(double* a, int size)
+{
+	cout << "The reverse of these numbers: ";
+	for (int i = 0; i < size; i++)
+	{
+		cout << *(a + i) << " ";
+	}
+	cout << "\n";
+	
+}
+
+void print(double scores[], int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		if (i > 0) { cout << ", "; }
+		cout << scores[i];
+	}
+	cout << endl;
+
+}
+
+
+int main()
+{
+	
+	const int capacity = 1000;
+	double scores[capacity];
+	
+	int size = input(scores, capacity);
+	double* a;
+	a = scores;
+	cout << "You input these numbers: "; print(scores, size);
+	cout << endl;
+	reverse(a, size);
+	printt(a, size);
+	
+	
+
+
+	system("pause");
+	return 0;
+}

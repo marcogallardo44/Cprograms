@@ -1,0 +1,79 @@
+// ConsoleApplication8.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+double distance(double x1, double x2, double y1, double y2)
+{
+	double d = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+	return d;
+}
+
+void midpoint(double x1, double x2, double y1, double y2, double& xmid, double& ymid)
+{
+	xmid = (x1 + x2) / 2;
+	ymid = (y1 + y2) / 2;
+	return;
+}
+
+void slope(double x1, double x2, double y1, double y2, bool& vertical, double& s)
+{
+	if (x1 == x2)
+	{
+		vertical = true;
+	}
+	else
+	{
+		s = (y2 - y1) / (x2 - x1);
+	}
+	return;
+}
+
+
+
+int main()
+{
+	bool vertical = false;
+	double x1;
+	double x2;
+	double y1;
+	double y2;
+	double s;
+	double xmid = 0;
+	double ymid = 0;
+
+	
+
+	cout << "Please enter the first point (x1 , y1): ";
+	cin >> x1 >> y1;
+
+	cout << "Please enter the second point (x2 , y2): ";
+	cin >> x2 >> y2;
+
+	midpoint(x1, x2, y1, y2, xmid, ymid);
+
+	
+
+	cout << "The distance between the first point and the second point is : " << distance(x1, x2, y1, y2) << endl;
+
+	cout << "The midpoint of the two points is: (" << xmid<< ", " << ymid << ") " << endl;
+
+	slope(x1, x2, y1, y2, vertical, s);
+	if (vertical)
+	{
+		cout << "The slope is vertical" << endl;
+	}
+	else
+	{
+		cout << "The slope of the funcion is: " << s << endl;
+	}
+
+
+	system("pause");
+    return 0;
+}
+

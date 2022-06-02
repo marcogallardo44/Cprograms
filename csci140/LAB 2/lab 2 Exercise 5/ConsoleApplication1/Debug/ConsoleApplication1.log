@@ -1,0 +1,4 @@
+﻿  ConsoleApplication1.cpp
+c:\users\marco gallardo\documents\visual studio 2017\projects\consoleapplication1\consoleapplication1\consoleapplication1.cpp(11): warning C4101: 'account': unreferenced local variable
+  ConsoleApplication1.vcxproj -> c:\users\marco gallardo\documents\visual studio 2017\Projects\ConsoleApplication1\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> c:\users\marco gallardo\documents\visual studio 2017\Projects\ConsoleApplication1\Debug\ConsoleApplication1.pdb (Partial PDB)

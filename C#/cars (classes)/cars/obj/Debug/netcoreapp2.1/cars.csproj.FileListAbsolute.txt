@@ -1,0 +1,22 @@
+C:\Users\magallardo1\Desktop\cars\cars\bin\Debug\netcoreapp2.1\cars.deps.json
+C:\Users\magallardo1\Desktop\cars\cars\bin\Debug\netcoreapp2.1\cars.runtimeconfig.json
+C:\Users\magallardo1\Desktop\cars\cars\bin\Debug\netcoreapp2.1\cars.runtimeconfig.dev.json
+C:\Users\magallardo1\Desktop\cars\cars\bin\Debug\netcoreapp2.1\cars.dll
+C:\Users\magallardo1\Desktop\cars\cars\bin\Debug\netcoreapp2.1\cars.pdb
+C:\Users\magallardo1\Desktop\cars\cars\obj\Debug\netcoreapp2.1\cars.csprojAssemblyReference.cache
+C:\Users\magallardo1\Desktop\cars\cars\obj\Debug\netcoreapp2.1\cars.csproj.CoreCompileInputs.cache
+C:\Users\magallardo1\Desktop\cars\cars\obj\Debug\netcoreapp2.1\cars.AssemblyInfoInputs.cache
+C:\Users\magallardo1\Desktop\cars\cars\obj\Debug\netcoreapp2.1\cars.AssemblyInfo.cs
+C:\Users\magallardo1\Desktop\cars\cars\obj\Debug\netcoreapp2.1\cars.dll
+C:\Users\magallardo1\Desktop\cars\cars\obj\Debug\netcoreapp2.1\cars.pdb
+G:\Marco USB Backup\C#\cars (classes)\cars\bin\Debug\netcoreapp2.1\cars.deps.json
+G:\Marco USB Backup\C#\cars (classes)\cars\bin\Debug\netcoreapp2.1\cars.runtimeconfig.json
+G:\Marco USB Backup\C#\cars (classes)\cars\bin\Debug\netcoreapp2.1\cars.runtimeconfig.dev.json
+G:\Marco USB Backup\C#\cars (classes)\cars\bin\Debug\netcoreapp2.1\cars.dll
+G:\Marco USB Backup\C#\cars (classes)\cars\bin\Debug\netcoreapp2.1\cars.pdb
+G:\Marco USB Backup\C#\cars (classes)\cars\obj\Debug\netcoreapp2.1\cars.csprojAssemblyReference.cache
+G:\Marco USB Backup\C#\cars (classes)\cars\obj\Debug\netcoreapp2.1\cars.csproj.CoreCompileInputs.cache
+G:\Marco USB Backup\C#\cars (classes)\cars\obj\Debug\netcoreapp2.1\cars.AssemblyInfoInputs.cache
+G:\Marco USB Backup\C#\cars (classes)\cars\obj\Debug\netcoreapp2.1\cars.AssemblyInfo.cs
+G:\Marco USB Backup\C#\cars (classes)\cars\obj\Debug\netcoreapp2.1\cars.dll
+G:\Marco USB Backup\C#\cars (classes)\cars\obj\Debug\netcoreapp2.1\cars.pdb

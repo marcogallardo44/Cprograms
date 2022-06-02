@@ -1,0 +1,33 @@
+// ConsoleApplication6.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{
+	const int tries = 10000;
+	srand(time(0));
+	int hits = 0;
+	for (int i = 1; i <= tries; i++)
+	{
+		double r = rand() * 1.0 / RAND_MAX; // between 0 and 1
+		double x = -1 + 2 * r; // between -1 and 1
+		r = rand() * 1.0 / RAND_MAX;
+		double y = -1 + 2 * r;
+		if (x * x + y * y <= 1) {hits++; }
+	}
+	double pi_estimate = 4.0 * hits / tries;
+	cout << "Estimate for pi: " << pi_estimate << endl;
+
+
+	
+	system ("pause");
+	return 0;
+}
+

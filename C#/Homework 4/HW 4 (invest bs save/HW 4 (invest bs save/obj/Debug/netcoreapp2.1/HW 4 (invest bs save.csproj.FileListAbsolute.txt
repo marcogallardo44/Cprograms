@@ -1,0 +1,11 @@
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (invest bs save\HW 4 (invest bs save\bin\Debug\netcoreapp2.1\HW 4 (invest bs save.deps.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (invest bs save\HW 4 (invest bs save\bin\Debug\netcoreapp2.1\HW 4 (invest bs save.runtimeconfig.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (invest bs save\HW 4 (invest bs save\bin\Debug\netcoreapp2.1\HW 4 (invest bs save.runtimeconfig.dev.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (invest bs save\HW 4 (invest bs save\bin\Debug\netcoreapp2.1\HW 4 (invest bs save.dll
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (invest bs save\HW 4 (invest bs save\bin\Debug\netcoreapp2.1\HW 4 (invest bs save.pdb
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (invest bs save\HW 4 (invest bs save\obj\Debug\netcoreapp2.1\HW 4 (invest bs save.csprojAssemblyReference.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (invest bs save\HW 4 (invest bs save\obj\Debug\netcoreapp2.1\HW 4 (invest bs save.csproj.CoreCompileInputs.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (invest bs save\HW 4 (invest bs save\obj\Debug\netcoreapp2.1\HW 4 (invest bs save.AssemblyInfoInputs.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (invest bs save\HW 4 (invest bs save\obj\Debug\netcoreapp2.1\HW 4 (invest bs save.AssemblyInfo.cs
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (invest bs save\HW 4 (invest bs save\obj\Debug\netcoreapp2.1\HW 4 (invest bs save.dll
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (invest bs save\HW 4 (invest bs save\obj\Debug\netcoreapp2.1\HW 4 (invest bs save.pdb

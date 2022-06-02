@@ -1,0 +1,17 @@
+Marco Gallardo
+John Payne
+Antonio Felix
+Jonathan Lu
+
+csci 140 T,Th 
+
+This group project was a little rough because it was hard to have everyone done by 
+the time we had set. As of the time i am writting this im fairly positive our group
+has finished the whole project. We each took on one problem from the project, and 
+then emailed the code to each other, for future knowledge. I had hoped we could have 
+finished the project as a group a couple days before the project was due, so we could all
+go over our codes with each other, and teach each other how it was done and how it works,
+but due to the nature of group projects people were not done until last minute, so we will
+have to learn the codes by ourselves on our own time. Im certain everyone spent a fair amount
+of time on their code, and tried their hardest to make it work. As long as everyone finished
+their part of the project, id say that it was successful.

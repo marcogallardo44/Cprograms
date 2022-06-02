@@ -1,0 +1,40 @@
+// ConsoleApplication3.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+#include <string>
+
+
+
+using namespace std;
+
+
+int main()
+{
+	double wage = 9.25;
+	double hours;
+	double pay_check;
+
+	cout << fixed << setprecision(2) << "Please input how many hours you have worked this week: ";
+	cin >> hours;
+
+	if (hours <= 40)
+	{
+		pay_check = hours * wage;
+		cout << "Your check will be for " << pay_check << "$" << endl;
+	}
+	else
+	{
+		pay_check = hours * 1.50 * wage;
+		cout << "your check will be for " << pay_check << "$" << endl;
+	}
+
+
+
+	system("pause");
+    return main();
+}
+

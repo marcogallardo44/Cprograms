@@ -1,0 +1,15 @@
+C:\Users\magallardo1\source\repos\HW1 (mile to km)WFA\HW1 (mile to km)WFA\obj\Debug\HW1 (mile to km)WFA.csprojAssemblyReference.cache
+C:\Users\magallardo1\source\repos\HW1 (mile to km)WFA\HW1 (mile to km)WFA\obj\Debug\HW1__mile_to_km_WFA.Form1.resources
+C:\Users\magallardo1\source\repos\HW1 (mile to km)WFA\HW1 (mile to km)WFA\obj\Debug\HW1__mile_to_km_WFA.Properties.Resources.resources
+C:\Users\magallardo1\source\repos\HW1 (mile to km)WFA\HW1 (mile to km)WFA\obj\Debug\HW1 (mile to km)WFA.csproj.GenerateResource.cache
+C:\Users\magallardo1\source\repos\HW1 (mile to km)WFA\HW1 (mile to km)WFA\obj\Debug\HW1 (mile to km)WFA.csproj.CoreCompileInputs.cache
+G:\Marco USB Backup\C#\HW1 (mile to km)WFA\HW1 (mile to km)WFA\bin\Debug\HW1 (mile to km)WFA.exe.config
+G:\Marco USB Backup\C#\HW1 (mile to km)WFA\HW1 (mile to km)WFA\bin\Debug\HW1 (mile to km)WFA.exe
+G:\Marco USB Backup\C#\HW1 (mile to km)WFA\HW1 (mile to km)WFA\bin\Debug\HW1 (mile to km)WFA.pdb
+G:\Marco USB Backup\C#\HW1 (mile to km)WFA\HW1 (mile to km)WFA\obj\Debug\HW1 (mile to km)WFA.csprojAssemblyReference.cache
+G:\Marco USB Backup\C#\HW1 (mile to km)WFA\HW1 (mile to km)WFA\obj\Debug\HW1__mile_to_km_WFA.Form1.resources
+G:\Marco USB Backup\C#\HW1 (mile to km)WFA\HW1 (mile to km)WFA\obj\Debug\HW1__mile_to_km_WFA.Properties.Resources.resources
+G:\Marco USB Backup\C#\HW1 (mile to km)WFA\HW1 (mile to km)WFA\obj\Debug\HW1 (mile to km)WFA.csproj.GenerateResource.cache
+G:\Marco USB Backup\C#\HW1 (mile to km)WFA\HW1 (mile to km)WFA\obj\Debug\HW1 (mile to km)WFA.csproj.CoreCompileInputs.cache
+G:\Marco USB Backup\C#\HW1 (mile to km)WFA\HW1 (mile to km)WFA\obj\Debug\HW1 (mile to km)WFA.exe
+G:\Marco USB Backup\C#\HW1 (mile to km)WFA\HW1 (mile to km)WFA\obj\Debug\HW1 (mile to km)WFA.pdb

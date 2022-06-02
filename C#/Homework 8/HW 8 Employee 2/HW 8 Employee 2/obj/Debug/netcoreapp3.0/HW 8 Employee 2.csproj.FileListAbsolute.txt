@@ -1,0 +1,11 @@
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 8\HW 8 Employee 2\HW 8 Employee 2\obj\Debug\netcoreapp3.0\HW 8 Employee 2.csprojAssemblyReference.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 8\HW 8 Employee 2\HW 8 Employee 2\obj\Debug\netcoreapp3.0\HW 8 Employee 2.AssemblyInfoInputs.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 8\HW 8 Employee 2\HW 8 Employee 2\obj\Debug\netcoreapp3.0\HW 8 Employee 2.AssemblyInfo.cs
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 8\HW 8 Employee 2\HW 8 Employee 2\bin\Debug\netcoreapp3.0\HW 8 Employee 2.exe
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 8\HW 8 Employee 2\HW 8 Employee 2\bin\Debug\netcoreapp3.0\HW 8 Employee 2.deps.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 8\HW 8 Employee 2\HW 8 Employee 2\bin\Debug\netcoreapp3.0\HW 8 Employee 2.runtimeconfig.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 8\HW 8 Employee 2\HW 8 Employee 2\bin\Debug\netcoreapp3.0\HW 8 Employee 2.runtimeconfig.dev.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 8\HW 8 Employee 2\HW 8 Employee 2\bin\Debug\netcoreapp3.0\HW 8 Employee 2.dll
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 8\HW 8 Employee 2\HW 8 Employee 2\bin\Debug\netcoreapp3.0\HW 8 Employee 2.pdb
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 8\HW 8 Employee 2\HW 8 Employee 2\obj\Debug\netcoreapp3.0\HW 8 Employee 2.dll
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 8\HW 8 Employee 2\HW 8 Employee 2\obj\Debug\netcoreapp3.0\HW 8 Employee 2.pdb

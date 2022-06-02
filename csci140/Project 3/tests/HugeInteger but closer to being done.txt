@@ -1,0 +1,472 @@
+HUGEINT.H
+
+#ifndef HugeInteger_H
+#define HugeInteger_H
+
+#include "stdafx.h"
+#include <array>
+#include<iostream>
+#include<string>
+
+class HugeInteger
+{
+	friend std::ostream& operator<<(std::ostream&, const HugeInteger&);
+public:
+	static const int digits{ 40 };//maximun digits in a HugeInteger
+
+	HugeInteger(long = 0); //conversion/default constructor
+	HugeInteger(const std::string&);//conversion constructor
+	int getLength() const;
+
+	// relational operators
+	/* Write prototype for operator > */
+	bool operator==(const HugeInteger& rhs) const;
+	bool operator!=(const HugeInteger& rhs) const;
+	bool operator>(const HugeInteger& rhs) const;
+	/* Write prototype for operator < */
+	bool operator<(const HugeInteger& rhs) const;
+	/* Write prototype for operator >= */
+	bool operator>=(const HugeInteger& rhs) const;
+	/* Write prototype for operator <= */
+	bool operator<=(const HugeInteger& rhs) const;
+
+	
+	//addition operator; HugeInteger + HugeInteger
+	HugeInteger operator+(const HugeInteger&) const;
+
+	//addition operator; HugeInteger + int
+	HugeInteger operator+(int) const;
+
+	//addition operator;
+	//HugeInteger + string that represents large integer
+	HugeInteger operator+(const std::string&) const;
+
+	//HugeInteger mult
+	//addition operator; HugeInteger * HugeInteger
+	HugeInteger operator*(const HugeInteger&) const;
+
+	//addition operator; HugeInteger * int
+	HugeInteger operator*(int) const;
+
+	//addition operator;
+	//HugeInteger / string that represents large integer
+	HugeInteger operator*(const std::string&) const;
+
+	//HugeInteger division
+	//addition operator; HugeInteger / HugeInteger
+	HugeInteger operator/(const HugeInteger&) const;
+
+	//addition operator; HugeInteger / int
+	HugeInteger operator/(int) const;
+
+	//addition operator;
+	//HugeInteger / string that represents large integer
+	HugeInteger operator/(const std::string&) const;
+
+
+
+
+
+
+
+
+private:
+	std::array<short, digits> integer{};//default init to 0s
+};
+#endif
+
+------------------------------------------------------------------------
+HUGEINT.CPP
+
+#include "stdafx.h"
+#include<cctype>//isdigit function prototype
+#include <vector>
+#include <string>
+#include "HugeInteger.h"
+using namespace std;
+
+//default constructorl conversion constructor that converts
+//a long integer into a HugeInteger object
+HugeInteger::HugeInteger(long value)
+{
+	//place digits of arguement into array
+	for (int j{ digits - 1 }; value != 0 && j >= 0; j--)
+	{
+		integer[j] = value % 10;
+		value /= 10;
+	}
+	cout << "worked" << endl;
+}
+
+//conversion constructor that converts a character string
+//representing a large integer into a HugeInteger object
+HugeInteger::HugeInteger(const string& number)
+{
+	//place digits of argument into array
+
+	int size = number.size();
+	int length{ size };
+
+	for (int j{ digits - length }, k{ 0 }; j < digits; ++j, ++k)
+	{
+		if (isdigit(number[k]))
+		{
+			//ensure that character is a digit
+			integer[j] = number[k] - '0';
+		}
+	}
+	cout << "worked2" << endl;
+}
+int HugeInteger::getLength() const
+{
+	int i;
+
+	for (i = 0; i <= 39; i++)
+		if (integer[i] != 0)
+			break; // break when first digit is reached
+	int size = 40 - i;
+	return size; // length is from first digit (at i) to end of array
+} // end function getLength
+
+/* Write a definition for the == operator */
+bool HugeInteger::operator==(const HugeInteger& rhs) const
+{
+	if (size != rhs.size)
+		return false;
+	for (int i = 39; i >= 0; i--)
+	{
+		if (integer[i] != rhs.integer[i])
+			return false;
+	}
+	return true;
+}
+// inequality operator; HugeInt != HugeInt
+/* Write a definition for the != operator
+by calling the == operator */
+bool HugeInteger::operator!=(const HugeInteger& rhs) const
+{
+
+	return !(*this == rhs);
+}
+// less than operator; HugeInt < HugeInt
+/* Write a definition for the < operator */
+bool HugeInteger::operator<(const HugeInteger& rhs) const
+{
+	for (int i = 39; i >= 0; i--)
+	{
+		if (integer[i] < rhs.integer[i])
+			return true;
+		if (integer[i] > rhs.integer[i])
+			return false;
+	}
+	return false;
+}
+// less than or equal operator; HugeInt <= HugeInt
+/* Write a definition for the <= operator
+by calling the < and == operators */
+bool HugeInteger::operator<=(const HugeInteger& rhs) const
+{
+	return (*this == rhs || *this < rhs);
+}
+// greater than operator; HugeInt > HugeInt
+/* Write a definition for the > operator
+by calling the <= operator */
+bool HugeInteger::operator>(const HugeInteger& rhs) const
+{
+	return !(*this <= rhs);
+}
+// greater than or equal operator; HugeInt >= HugeInt
+/* Write a definition for the >= operator
+by calling the > and == operators */
+bool HugeInteger::operator>=(const HugeInteger& rhs) const
+{
+	return (*this == rhs || *this > rhs);
+}
+
+//addition operator; HugeInteger + HugeInteger
+HugeInteger HugeInteger::operator+(const HugeInteger& op2) const
+{
+	HugeInteger temp;//temporary result
+	int carry = 0;
+	for (int i{ digits - 1 }; i >= 0; i--)
+	{
+		temp.integer[i] = integer[i] + op2.integer[i] + carry;
+
+
+		//determin whether to carry a 1
+		if (temp.integer[i] > 9)
+		{
+			temp.integer[i] %= 10;//reduce to 0-9
+			carry = 1;
+		}
+		else
+			carry = 0; //no carry
+	}
+	cout << "worked3" << endl;
+	return temp;//return copy of temporary object
+
+}
+
+//addition operator; HugeInteger + int
+HugeInteger HugeInteger::operator+(int op2) const
+{
+	//convert op2 to a HugeInteger, then invoke
+	//operator+ for two HugeInteger objects
+	cout << "worked4" << endl;
+	return *this + HugeInteger(op2);
+}
+
+//addition operator
+//HugeInteger+string that represents large integer value
+HugeInteger HugeInteger::operator+(const string& op2) const
+{
+	//convert op2 to a HugeInteger, then invoke
+	//operator+ for two HugeIntger objects
+	cout << "worked5" << endl;
+	return *this + HugeInteger(op2);
+}
+
+//addition operator; HugeInteger * HugeInteger
+HugeInteger HugeInteger::operator*(const HugeInteger& op2) const
+{
+	HugeInteger temp;
+	HugeInteger temp2;
+	int n1 = integer.size();
+	
+	int n2 = op2.integer.size();
+	if (n1 == 0 || n2 == 0)
+		return "0";
+	
+	
+	// will keep the result number in vector
+	// in reverse order
+	vector<int> result(n1 + n2, 0);
+
+	// Below two indexes are used to find positions
+	// in result. 
+	int i_n1 = 0;
+	int i_n2 = 0;
+
+	// Go from right to left in num1
+	for (int i = integer.size() - 1; i >= 0; i--)
+	{
+		int carry = 0;
+		integer[i] - '0';
+
+		// To shift position to left after every
+		// multiplication of a digit in num2
+		i_n2 = 0;
+
+		// Go from right to left in num2             
+		for (int j = op2.integer.size() - 1; j >= 0; j--)
+		{
+			// Take current digit of second number
+
+
+
+			// Multiply with current digit of first number
+			// and add result to previously stored result
+			// at current position. 
+			int sum = integer[i] * op2.integer[j] + result[i_n1 + i_n2] + carry;
+
+			// Carry for next iteration
+			carry = sum / 10;
+
+			// Store result
+			result[i_n1 + i_n2] = sum % 10;
+
+			i_n2++;
+		}
+
+		// store carry in next cell
+		if (carry > 0)
+			result[i_n1 + i_n2] += carry;
+
+
+
+		cout << result[i];
+		// To shift position to left after every
+		// multiplication of a digit in num1.
+		i_n1++;
+	}
+	cout << endl;
+	// ignore '0's from the right
+	int i = result.size() - 1;
+	while (i >= 0 && result[i] == 0)
+		i--;
+
+	for (i; i >= 0; i--)
+	{
+		temp2.integer[i] = result[i];
+		cout << temp2.integer[i];
+	}
+	cout << endl;
+
+	temp = temp2;
+
+
+
+	return temp;
+}
+
+//addition operator; HugeInteger * int
+HugeInteger HugeInteger::operator*(int op2) const
+{
+	//convert op2 to a HugeInteger, then invoke
+	//operator+ for two HugeInteger objects
+	return *this * HugeInteger(op2);
+}
+
+//addition operator
+//HugeInteger+string that represents large integer value
+HugeInteger HugeInteger::operator*(const string& op2) const
+{
+	//convert op2 to a HugeInteger, then invoke
+	//operator+ for two HugeIntger objects
+	return *this * HugeInteger(op2);
+}
+
+
+//divsion
+HugeInteger HugeInteger::operator/(const HugeInteger& op2) const
+{
+	// As result can be very large store it in string
+	string ans;
+	HugeInteger temp2;
+
+	HugeInteger divisor = op2;
+	// Find prefix of number that is larger
+	// than divisor.
+	int idx = 0;
+	int temp = temp2.integer[idx] - '0';
+	while (temp2.integer[idx] < op2.integer[idx])
+		temp = temp * 10 + (temp2.integer[++idx] - '0');
+
+	// Repeatedly divide divisor with temp. After 
+	// every division, update temp to include one 
+	// more digit.
+	int i = temp2.integer.size() - 1;
+	while (i >= 0 && temp2.integer[i] == 0)
+		i--;
+	int k = op2.integer.size() - 1;
+	while (k >= 0 && op2.integer[k] == 0)
+		i--;
+
+	while (temp2.integer.size() > idx)
+	{
+		// Store result in answer i.e. temp / divisor
+		ans += (temp2.integer[idx] / op2.integer[idx]) + '0';
+
+		// Take next digit of number
+		temp = (temp % op2.integer[idx]) * 10 + temp2.integer[++idx] - '0';
+	}
+
+	// If divisor is greater than number
+	if (ans.length() == 0)
+		return "0";
+
+	// else return ans
+	return ans;
+}
+
+
+HugeInteger HugeInteger::operator/(int op2) const
+{
+	//convert op2 to a HugeInteger, then invoke
+	//operator+ for two HugeInteger objects
+	return *this / HugeInteger(op2);
+}
+
+//addition operator
+//HugeInteger+string that represents large integer value
+HugeInteger HugeInteger::operator/(const string& op2) const
+{
+	//convert op2 to a HugeInteger, then invoke
+	//operator+ for two HugeIntger objects
+	return *this / HugeInteger(op2);
+}
+
+//overloaded output operator
+ostream& operator<<(ostream& output, const HugeInteger& num)
+{
+	int i;
+
+	//skip leading zeros
+	for (i = 0; (i < HugeInteger::digits) && (0 == num.integer[i]); ++i) {}
+
+	if (i == HugeInteger::digits)
+	{
+		output << 0;
+	}
+	else
+	{
+		for (; i < HugeInteger::digits; ++i)
+		{
+			output << num.integer[i];
+		}
+	}
+
+	return output;
+}
+
+----------------------------------------------------------------------------------------------------------------
+HUGEINTTEST.CPP
+
+// ConsoleApplication9.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>
+#include "HugeInteger.h"
+using namespace std;
+
+
+int main()
+{
+	HugeInteger n1{ 76754321 };
+	HugeInteger n2{ 7891234 };
+	HugeInteger n3{ "99999999999999999999999999999" };
+	HugeInteger n4{ "1" };
+	HugeInteger n5;
+
+	cout << "n1 is " << n1 << "\nn2 is " << n2
+		<< "\nn3 is " << n3 << "\nn4 is " << n4
+		<< "\nn5 is " << n4 << "\n\n";
+
+	// test relational and equality operators
+	if (n1 == n2)
+		cout << "n1 equals n2" << endl;
+
+	if (n1 != n2)
+		cout << "n1 is not equal to n2" << endl;
+
+	if (n1 < n2)
+		cout << "n1 is less than n2" << endl;
+
+	if (n1 <= n2)
+		cout << "n1 is less than or equal to n2" << endl;
+
+	if (n1 > n2)
+		cout << "n1 is greater than n2" << endl;
+
+	if (n1 >= n2)
+		cout << "n1 is greater than or equal to n2" << endl;
+
+
+
+	n5 = n1 * n2;
+	cout << n1 << " * " << n2 << " = " << n5 << "\n\n";
+	
+	cout << n3 << " + " << n4 << "\n= " << (n3 * n4) << "\n\n";
+
+	n5 = n1 * 9;
+	cout << n1 << " + " << 9 << " = " << n5 << "\n\n";
+
+	n5 = n2 * "10000";
+	cout << n2 << " + " << "10000" << " = " << n5 << endl;
+
+
+
+	system("pause");
+	return 0;
+}

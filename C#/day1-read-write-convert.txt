@@ -1,0 +1,22 @@
+using System;
+
+namespace hi
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string num1_str,num2_str, num3_str;
+            int num1, num2, num3;
+            Console.WriteLine("Hello World!");
+            Console.Write("Welcome");
+            Console.Write(" my friend ");
+            Console.WriteLine("Enter the 1st number:");
+            Console.WriteLine("Enter the 2nd number:");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            num2 = Convert.ToInt32(Console.ReadLine());
+            num3 = num1 + num2;
+            Console.WriteLine("Your sum is " + num3);
+        }
+    }
+}

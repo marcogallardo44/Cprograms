@@ -1,0 +1,65 @@
+// ConsoleApplication6.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+#include <string>
+#include <iomanip>
+
+using namespace std;
+
+
+int main()
+{
+	int i;
+	int j;
+	int k;
+	int l;
+	int number;
+
+
+	cout << "Please input a number: ";
+	cin >> number;
+
+	
+	
+	for (i = 1; i <= number; i++)
+	{
+		
+		for (j = 1; j <= 2 * number + 1; j++)
+		{
+			if (j > number && j <= number + 1)
+			{
+				cout << " ";
+			}
+			if (j > number + 1 && j <= 2 * number && i != 1 && i != number)
+			{
+				cout << " ";
+			}
+			else
+			{
+				cout << "*";
+			}
+			
+			
+			
+		}
+		cout << endl;
+
+
+
+	}
+
+	
+
+
+
+
+
+
+	system("pause");
+    return 0;
+}
+

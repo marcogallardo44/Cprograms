@@ -1,0 +1,130 @@
+/// ConsoleApplication1.cpp : Defines the entry point for the console application.
+/*
+Program Description:
+This program allows user input an array
+then input another array
+then putting both arrays together
+Author:
+Marco Gallardo
+Input Variables:
+input array a
+input array b
+Process Flow:
+creates one function that allows user input, reads it, checks if it has more than the max size
+if it does, it doubles it, then allows the user to input more numbers
+finally putting both arrays together
+Output variables:
+outputs the first numbers put in
+outputs the new array
+*/
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+double* read_data(int& size)
+{
+	const double array_size = 10;
+	double* arrint = new double[array_size];
+	double size_again = array_size;
+
+
+	cout << "Please enter values, Q to quit:" << endl;
+	double input;
+	while (cin >> input)
+	{
+		arrint[size++] = input;
+
+		if (size >= array_size)
+		{
+			size_again = size * 2;
+			double* arrint2 = new double[size_again];
+
+
+			for (int i = 0; i < size; i++)
+			{
+				arrint2[i] = arrint[i];
+			}
+			cout << "You input these numbers: ";
+			for (int i = 0; i < size; i++)
+			{
+				if (i > 0) { cout << ", "; }
+				cout << arrint2[i];
+			}
+
+
+			delete[] arrint;
+			arrint = arrint2;
+		}
+	}
+	cout << endl;
+	cout << endl;
+
+
+
+	cin.clear();
+	cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+	cout << "Please enter more values, Q to quit:" << endl;
+	while (cin >> input)
+	{
+		arrint[size++] = input;
+
+		if (size >= array_size)
+		{
+			size_again = size * 2;
+			
+		}
+		else
+		{
+			size_again = size_again - input;
+			
+			double* arrint2 = new double[size_again];
+
+
+			for (int i = 0; i < size; i++)
+			{
+				arrint2[i] = arrint[i];
+			}
+			delete[] arrint;
+			arrint = arrint2;
+		}
+	}
+	cout << endl;
+	return arrint;
+
+}
+
+
+
+
+
+int main()
+{
+	int size = 0;
+	double* result = read_data(size);
+
+	double* end = new double[size];
+	for (int i = 0; i < size; i++)
+	{
+		end[i] = result[i];
+	}
+
+	cout << "Your final array of numbers is: " << endl;
+	for (int i = 0; i < size; i++)
+	{
+		if (i > 0) { cout << ", "; }
+		cout << end[i];
+	}
+	cout << endl;
+	cout << endl;
+	delete[]end;
+	delete[]result;
+
+
+
+	system("pause");
+	return 0;
+}
+

@@ -1,0 +1,10 @@
+C:\Users\magallardo1\source\repos\ref or value WFA\ref or value WFA\bin\Debug\ref or value WFA.exe.config
+C:\Users\magallardo1\source\repos\ref or value WFA\ref or value WFA\bin\Debug\ref or value WFA.exe
+C:\Users\magallardo1\source\repos\ref or value WFA\ref or value WFA\bin\Debug\ref or value WFA.pdb
+C:\Users\magallardo1\source\repos\ref or value WFA\ref or value WFA\obj\Debug\ref or value WFA.csprojAssemblyReference.cache
+C:\Users\magallardo1\source\repos\ref or value WFA\ref or value WFA\obj\Debug\ref_or_value_WFA.Form1.resources
+C:\Users\magallardo1\source\repos\ref or value WFA\ref or value WFA\obj\Debug\ref_or_value_WFA.Properties.Resources.resources
+C:\Users\magallardo1\source\repos\ref or value WFA\ref or value WFA\obj\Debug\ref or value WFA.csproj.GenerateResource.cache
+C:\Users\magallardo1\source\repos\ref or value WFA\ref or value WFA\obj\Debug\ref or value WFA.csproj.CoreCompileInputs.cache
+C:\Users\magallardo1\source\repos\ref or value WFA\ref or value WFA\obj\Debug\ref or value WFA.exe
+C:\Users\magallardo1\source\repos\ref or value WFA\ref or value WFA\obj\Debug\ref or value WFA.pdb

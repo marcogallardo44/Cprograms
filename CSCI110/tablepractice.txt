@@ -1,0 +1,51 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+
+
+using namespace std;
+
+
+
+int main()
+{
+	int nmax = 0;
+	double xmax = 0;
+	cout << "Please input nmax then xmax: ";
+	cin >> nmax >> xmax;
+
+	// Print table header
+	for (int n = 1; n <= nmax; n++)
+	{
+		cout << setw(10) << n;
+	}
+	cout << endl;
+	for (int n=1; n <= nmax; n++)
+	{
+		cout << setw(10) << "X ";
+	}
+	cout << endl << endl;
+
+	// Print table body
+	for (double x = 1; x <= xmax; x++)
+	{
+		// Pring table row
+		for (int n=1; n <= nmax; n++)
+		{
+			cout << setw(10) << pow(x, n);
+		}
+	cout << endl;
+}
+	
+
+
+
+
+	system("pause");
+	return 0;
+}
+

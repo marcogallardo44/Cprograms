@@ -1,0 +1,46 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+	double values[]= { 32, 54, 67.5, 29, 35, 80, 115, 44.5, 100, 65 };
+	int number = 0;
+	int pos = 0;
+	bool found = false;
+	
+	
+	cout << "Please enter number: ";
+	cin >> number;
+	
+	while (pos < 10 && !found)
+	{
+		if (values[pos] == number)
+		{
+			found = true;
+			pos++;
+		}
+		else 
+		{
+			pos++;
+		}
+	}
+	if (found)
+	{
+		cout << pos << endl;
+	}
+	else 
+	{
+		cout << "not found" << endl;
+	}
+
+
+	system("pause");
+	return 0;
+}
+

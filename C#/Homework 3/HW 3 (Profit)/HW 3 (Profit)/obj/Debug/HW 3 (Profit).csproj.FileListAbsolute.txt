@@ -1,0 +1,10 @@
+G:\Marco USB Backup\C#\HW 3 (Profit)\HW 3 (Profit)\bin\Debug\HW 3 (Profit).exe.config
+G:\Marco USB Backup\C#\HW 3 (Profit)\HW 3 (Profit)\bin\Debug\HW 3 (Profit).exe
+G:\Marco USB Backup\C#\HW 3 (Profit)\HW 3 (Profit)\bin\Debug\HW 3 (Profit).pdb
+G:\Marco USB Backup\C#\HW 3 (Profit)\HW 3 (Profit)\obj\Debug\HW 3 (Profit).csprojAssemblyReference.cache
+G:\Marco USB Backup\C#\HW 3 (Profit)\HW 3 (Profit)\obj\Debug\HW_3__Profit_.Form1.resources
+G:\Marco USB Backup\C#\HW 3 (Profit)\HW 3 (Profit)\obj\Debug\HW_3__Profit_.Properties.Resources.resources
+G:\Marco USB Backup\C#\HW 3 (Profit)\HW 3 (Profit)\obj\Debug\HW 3 (Profit).csproj.GenerateResource.cache
+G:\Marco USB Backup\C#\HW 3 (Profit)\HW 3 (Profit)\obj\Debug\HW 3 (Profit).csproj.CoreCompileInputs.cache
+G:\Marco USB Backup\C#\HW 3 (Profit)\HW 3 (Profit)\obj\Debug\HW 3 (Profit).exe
+G:\Marco USB Backup\C#\HW 3 (Profit)\HW 3 (Profit)\obj\Debug\HW 3 (Profit).pdb

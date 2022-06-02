@@ -1,0 +1,58 @@
+
+  CSCI 140 C++ 
+
+  Data set and testing instruction for project #2
+  -------------------------------------------------
+
+  1.  MILES to KM  40, 60, 80, 10, 120, 1000
+
+      FEET to METERS  1, 3.50, 5,  5.8,  6, 6.5
+
+      FAHRENHEIT to CELSIUS  -10, 0, 20, 40, 60, 75, 100
+
+
+ 2.    ADD and MULTIPLY the following pairs of BIGINTS:
+
+       A= 99999999999999999999
+       B= 2
+
+       M= 12345654321
+       N= 111
+
+       m= 9991111111111994444444444
+       n=  332222222222335555555555
+
+       X= 99999999991111111111888888888822222222225555555555
+       Y= 22222222228888888888444444444477777777776666666666
+ 
+      DO  A+B, A*B, M+N, M*N, m+n, m*n, X+Y, X*Y
+
+3.    The number of elements in the set shoud not be predetermined.
+      You need to write the code that will count, as you enter the data,
+      how many numbers are in the set.
+ 
+      Test your program with the following sets:
+
+      A = { 24, 36, 54 }
+
+      B = { 12, 42, 72, 96, 192 
+  
+      C = { 471, 240, 762, 222, 111 }
+
+4.   USE AGES:
+
+      4 15 79 52 56 19 21 22  3 
+     12 30 33 81 99 85 28 24 25 
+     24 26 27 20 41 32 35 24 39
+     43 41 46 56 62 22 20 22 18 
+
+
+5.   a) Linear search for the  keys:  9, 24, 81 on the list
+
+      A = { 1, 93, 5, 78, 9, 12, 13, 17, 19, 20, 25, 48, 56, 7, 81, 89, 2, 96}
+   
+     b) Binary search for the  keys: 9, 24, 81 on the list
+
+      B = { 1, 2, 5, 7, 9, 12, 13, 17, 19, 20, 25, 48, 56, 78, 81, 89, 93, 96}
+
+      Note that the  binary search needs to use and sorted list 

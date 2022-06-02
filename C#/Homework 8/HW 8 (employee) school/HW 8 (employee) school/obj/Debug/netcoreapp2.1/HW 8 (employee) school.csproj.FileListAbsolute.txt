@@ -1,0 +1,33 @@
+C:\Users\magallardo1\source\repos\HW 8 (employee) school\HW 8 (employee) school\bin\Debug\netcoreapp2.1\HW 8 (employee) school.deps.json
+C:\Users\magallardo1\source\repos\HW 8 (employee) school\HW 8 (employee) school\bin\Debug\netcoreapp2.1\HW 8 (employee) school.runtimeconfig.json
+C:\Users\magallardo1\source\repos\HW 8 (employee) school\HW 8 (employee) school\bin\Debug\netcoreapp2.1\HW 8 (employee) school.runtimeconfig.dev.json
+C:\Users\magallardo1\source\repos\HW 8 (employee) school\HW 8 (employee) school\bin\Debug\netcoreapp2.1\HW 8 (employee) school.dll
+C:\Users\magallardo1\source\repos\HW 8 (employee) school\HW 8 (employee) school\bin\Debug\netcoreapp2.1\HW 8 (employee) school.pdb
+C:\Users\magallardo1\source\repos\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.csprojAssemblyReference.cache
+C:\Users\magallardo1\source\repos\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.csproj.CoreCompileInputs.cache
+C:\Users\magallardo1\source\repos\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.AssemblyInfoInputs.cache
+C:\Users\magallardo1\source\repos\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.AssemblyInfo.cs
+C:\Users\magallardo1\source\repos\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.dll
+C:\Users\magallardo1\source\repos\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.pdb
+D:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\bin\Debug\netcoreapp2.1\HW 8 (employee) school.deps.json
+D:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\bin\Debug\netcoreapp2.1\HW 8 (employee) school.runtimeconfig.json
+D:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\bin\Debug\netcoreapp2.1\HW 8 (employee) school.runtimeconfig.dev.json
+D:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\bin\Debug\netcoreapp2.1\HW 8 (employee) school.dll
+D:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\bin\Debug\netcoreapp2.1\HW 8 (employee) school.pdb
+D:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.csprojAssemblyReference.cache
+D:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.csproj.CoreCompileInputs.cache
+D:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.AssemblyInfoInputs.cache
+D:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.AssemblyInfo.cs
+D:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.dll
+D:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.pdb
+G:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\bin\Debug\netcoreapp2.1\HW 8 (employee) school.deps.json
+G:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\bin\Debug\netcoreapp2.1\HW 8 (employee) school.runtimeconfig.json
+G:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\bin\Debug\netcoreapp2.1\HW 8 (employee) school.runtimeconfig.dev.json
+G:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\bin\Debug\netcoreapp2.1\HW 8 (employee) school.dll
+G:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\bin\Debug\netcoreapp2.1\HW 8 (employee) school.pdb
+G:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.csprojAssemblyReference.cache
+G:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.csproj.CoreCompileInputs.cache
+G:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.AssemblyInfoInputs.cache
+G:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.AssemblyInfo.cs
+G:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.dll
+G:\Marco USB Backup\C#\Homework 8\HW 8 (employee) school\HW 8 (employee) school\obj\Debug\netcoreapp2.1\HW 8 (employee) school.pdb

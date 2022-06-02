@@ -1,0 +1,87 @@
+// LinearSearch.cpp, Marco Gallardo, c++ Language and Objects
+//Project #2 Question 5 a). MS Visual Studio 2017, 10/30/17
+
+#include "stdafx.h"
+#include <iostream>
+#include <ctime>
+
+
+using namespace std;
+
+void find()
+{
+	srand(time(0));
+	double values[100];
+	int size = 100;
+	int number = 0;
+	int pos = 0;
+	bool found = false;
+	int largest = 0;
+
+
+	cout << "The list of numbers is: ";
+	for (int i = 0; i < size; i++)
+	{
+		values[i] = (rand() % 100);
+		cout << values[i] << " ";
+
+	}
+	largest = values[0];
+	for (int i = 1; i < size; i++)
+	{
+		
+		if (values[i] > largest)
+			largest = values[i];
+	}
+
+	cout << endl;
+	cout << "The largest number is: " << largest << endl;
+
+
+	cout << "Please enter number you wish to find: ";
+	cin >> number;
+
+	while (pos < size && !found)
+	{
+		if (values[pos] == number)
+		{
+			found = true;
+			pos++;
+		}
+		else
+		{
+			pos++;
+		}
+	}
+	if (found)
+	{
+		cout << "Found number: " << number << " in position: " << pos << endl;
+	}
+	else
+	{
+		cout << "The number you input was not found" << endl;
+	}
+
+
+}
+
+
+
+int main()
+{
+
+
+	find();
+
+
+
+
+	system("pause");
+	return 0;
+}
+
+//REPORT
+/*this one wasnt as hard as part B, because you just have
+to make the function search for a number, if its not the 
+number then it moves to the next number in an array
+and does that until it is found.*/

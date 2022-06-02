@@ -1,0 +1,213 @@
+CARD.H
+
+// Debugging: Card.h
+#ifndef CARD_H
+#define CARD_H
+// class card definition
+
+class Card {
+public:
+	Card(int = 4, int = 1);
+	void setCard(int, int);
+	~Card();
+	
+	void setSuit(int);
+	const int getSuit();
+	
+	void setValue(int);
+	const int getValue();
+	
+	void print();
+	
+private:
+	int suit;
+	int value;
+	bool validCard = true;
+}; // end class Card
+#endif // CARD_H
+
+
+CARD.CPP
+
+// Debugging: Card.cpp
+#include "stdafx.h"
+#include <iostream>
+#include "Card.h"
+using namespace std;
+
+int value = 1;
+int suit = 4;
+
+// default constructor
+Card::Card(int suit, int value)
+{
+	suit = 4;
+	value = 1;
+
+} // end class Card constructor
+
+// constructor
+void Card::setCard(int s, int v)
+{
+	suit = s; value = v;
+
+} // end class Card constructor
+ 
+  // destructor
+Card::~Card()
+{
+	cout << "The destructor has been invoked\n";
+
+} // end class Card destructor
+ 
+  // set suit
+void Card::setSuit(int s)
+{
+	suit = s;
+
+} // end function setSuit
+ 
+  // set value
+void Card::setValue(int v)
+{
+	value = v;
+
+} // end function setValue
+ 
+bool validCard()
+{
+	return (value >= 1 && value <= 13) && (suit >= 1 && suit <= 4);
+
+} // end function validCard
+
+  // function print definition
+void print()
+{
+	// is card valid
+	if (!validCard()) {
+		cout << "This card is not valid\n";
+		return;
+
+	} // end if
+
+	cout << "This is the: ";
+
+	// determine face of card
+	switch (value) {
+	case 1:
+		cout << "Ace ";
+		break;
+
+	case 11:
+		cout << "Jack ";
+		break;
+
+	case 12:
+		cout << "Queen ";
+		break;
+
+	case 13:
+		cout << "King ";
+		break;
+
+	default:
+		cout << value << " ";
+
+	} // end switch
+
+	  // determine suit
+	switch (suit) {
+	case 1:
+		cout << "of clubs\n";
+		break;
+
+	case 2:
+		cout << "of diamonds\n";
+		break;
+
+	case 3:
+		cout << "of hearts\n";
+		break;
+
+	case 4:
+		cout << "of spades\n";
+		break;
+
+	default:
+		cout << "\ninvalid suit\n";
+
+	} // end switch
+
+} // end function print
+
+  // return suit
+const int Card::getSuit()
+{
+	return suit;
+
+} // end function getSuit
+
+  // return value
+const int Card::getValue()
+{
+	return value;
+
+} // end function getValue
+
+  // function validCard definition
+
+
+CARDTEST.CPP
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+#include "Card.h" // include definitions of class Date
+
+int main()
+{
+	
+	Card c1(1,5);
+	Card c2(3, 4);
+	Card c3(1, 13);
+	
+	Card *p1 = &c2;
+	
+	c1.print();
+	c2.print();
+	c3.print();
+	p1->print();
+	cout << endl;
+	
+	c1.setSuit(p1->getSuit());
+	c3.setValue(12);
+	p1->setValue(5);
+	
+	c1.print();
+	c2.print();
+	c3.print();
+	p1->print();
+	*p1.print();
+	cout << endl;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+	system("pause");
+    return 0;
+}
+
+

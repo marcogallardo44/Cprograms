@@ -1,0 +1,11 @@
+G:\Marco USB Backup\C#\HW 3 (grades)\HW 3 (grades)\bin\Debug\netcoreapp2.1\HW 3 (grades).deps.json
+G:\Marco USB Backup\C#\HW 3 (grades)\HW 3 (grades)\bin\Debug\netcoreapp2.1\HW 3 (grades).runtimeconfig.json
+G:\Marco USB Backup\C#\HW 3 (grades)\HW 3 (grades)\bin\Debug\netcoreapp2.1\HW 3 (grades).runtimeconfig.dev.json
+G:\Marco USB Backup\C#\HW 3 (grades)\HW 3 (grades)\bin\Debug\netcoreapp2.1\HW 3 (grades).dll
+G:\Marco USB Backup\C#\HW 3 (grades)\HW 3 (grades)\bin\Debug\netcoreapp2.1\HW 3 (grades).pdb
+G:\Marco USB Backup\C#\HW 3 (grades)\HW 3 (grades)\obj\Debug\netcoreapp2.1\HW 3 (grades).csprojAssemblyReference.cache
+G:\Marco USB Backup\C#\HW 3 (grades)\HW 3 (grades)\obj\Debug\netcoreapp2.1\HW 3 (grades).csproj.CoreCompileInputs.cache
+G:\Marco USB Backup\C#\HW 3 (grades)\HW 3 (grades)\obj\Debug\netcoreapp2.1\HW 3 (grades).AssemblyInfoInputs.cache
+G:\Marco USB Backup\C#\HW 3 (grades)\HW 3 (grades)\obj\Debug\netcoreapp2.1\HW 3 (grades).AssemblyInfo.cs
+G:\Marco USB Backup\C#\HW 3 (grades)\HW 3 (grades)\obj\Debug\netcoreapp2.1\HW 3 (grades).dll
+G:\Marco USB Backup\C#\HW 3 (grades)\HW 3 (grades)\obj\Debug\netcoreapp2.1\HW 3 (grades).pdb

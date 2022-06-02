@@ -1,0 +1,5 @@
+﻿  test 2 practice 2.cpp
+c:\users\marco gallardo\desktop\marco usb backup\c for engineering\test 2 practice 2\test 2 practice 2\test 2 practice 2.cpp(45): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\marco gallardo\desktop\marco usb backup\c for engineering\test 2 practice 2\test 2 practice 2\test 2 practice 2.cpp(59): warning C4717: 'main': recursive on all control paths, function will cause runtime stack overflow
+  test 2 practice 2.vcxproj -> C:\Users\Marco Gallardo\Desktop\Marco USB Backup\c for engineering\test 2 practice 2\Debug\test 2 practice 2.exe
+  test 2 practice 2.vcxproj -> C:\Users\Marco Gallardo\Desktop\Marco USB Backup\c for engineering\test 2 practice 2\Debug\test 2 practice 2.pdb (Partial PDB)

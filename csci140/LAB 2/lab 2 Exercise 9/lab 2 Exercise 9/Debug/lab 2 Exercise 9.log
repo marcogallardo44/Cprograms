@@ -1,0 +1,5 @@
+﻿  lab 2 Exercise 9.cpp
+c:\users\marco gallardo\documents\visual studio 2017\projects\lab 2 exercise 9\lab 2 exercise 9\lab 2 exercise 9.cpp(34): warning C4244: '=': conversion from 'double' to 'short', possible loss of data
+c:\users\marco gallardo\documents\visual studio 2017\projects\lab 2 exercise 9\lab 2 exercise 9\lab 2 exercise 9.cpp(38): warning C4244: '=': conversion from 'double' to 'short', possible loss of data
+  lab 2 Exercise 9.vcxproj -> C:\Users\Marco Gallardo\Documents\Visual Studio 2017\Projects\lab 2 Exercise 9\Debug\lab 2 Exercise 9.exe
+  lab 2 Exercise 9.vcxproj -> C:\Users\Marco Gallardo\Documents\Visual Studio 2017\Projects\lab 2 Exercise 9\Debug\lab 2 Exercise 9.pdb (Partial PDB)

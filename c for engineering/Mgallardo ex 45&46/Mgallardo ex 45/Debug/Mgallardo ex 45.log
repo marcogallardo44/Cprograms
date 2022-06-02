@@ -1,0 +1,5 @@
+﻿  Mgallardo ex 45.cpp
+c:\users\magallardo1\desktop\mgallardo ex 45\mgallardo ex 45\mgallardo ex 45.cpp(19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\magallardo1\desktop\mgallardo ex 45\mgallardo ex 45\mgallardo ex 45.cpp(15): warning C4101: 'j': unreferenced local variable
+c:\users\magallardo1\desktop\mgallardo ex 45\mgallardo ex 45\mgallardo ex 45.cpp(14): warning C4101: 'i': unreferenced local variable
+  Mgallardo ex 45.vcxproj -> C:\Users\magallardo1\Desktop\Mgallardo ex 45\Debug\Mgallardo ex 45.exe

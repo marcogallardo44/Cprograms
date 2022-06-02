@@ -1,0 +1,60 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+#include <string>
+using namespace std;
+
+int main()
+{
+	const double tax1 = .10;
+	const double tax2 = .25;
+	const double rate_single_limit = 32000;
+	const double rate_married_limit = 64000;
+	double tax1_amount = 0;
+	double tax2_amount = 0;
+
+	double income;
+	cout << "Please enter your income: ";
+	cin >> income;
+
+	cout << "PLease enter marital status (S for single, M for married): ";
+	string marital_status;
+	cin >> marital_status;
+			
+	if (marital_status == "S")
+	{
+		if (income <= rate_single_limit)
+		{
+			tax1_amount = tax1 * income;
+		}
+		else
+		{
+			tax1_amount = rate_single_limit * tax1 + tax2 * (income - rate_single_limit);
+		}
+		cout << "your taxed amount is " << tax1_amount << endl;
+	}
+	else 
+	{
+		if ( income <= rate_married_limit)
+		{
+			tax2_amount = income * tax1;
+		}
+		else
+		{
+			tax2_amount = rate_married_limit * tax1 +tax2 * (income - rate_married_limit);
+		}
+	cout << "your taxed amount is " << tax2_amount << endl;
+	}
+
+	
+	
+	
+
+
+	system("pause");
+	return 0;
+}
+

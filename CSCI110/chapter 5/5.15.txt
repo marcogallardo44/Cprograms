@@ -1,0 +1,69 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+
+void sort3(int& a, int& b, int& c)
+{
+	if (a > b)
+	{
+		int c = a;
+		a = b;
+		b = c;
+	}
+	if (a > c)
+	{
+		int d = a;
+		a = c;
+		c = d;
+	}
+	if (b > c)
+	{
+		int d = b;
+		b = c;
+		c = d;
+	}
+	return;
+}
+
+
+int main()
+{
+	int a = 0;
+	int b = 0;
+	int c = 0;
+
+	cout << "Please enter three numbers: ";
+	cin >> a >> b >> c;
+
+	if (cin.fail())
+	{
+		cin.clear();
+		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		cout << "The input does not work press SPACE and try again." << endl;
+		system("pause");
+		return main();
+	}
+
+	cout << "You put in that: " << endl;
+	cout << "A = " << a << endl;
+	cout << "B = " << b << endl;
+	cout << "C = " << c << endl;
+
+	
+	cout << "The new order of your input is:" << endl;
+	sort3(a, b, c);
+	cout << "A = " << a << endl;
+	cout << "B = " << b << endl;
+	cout << "C = " << c << endl;
+
+
+	system("pause");
+    return 0;
+}
+

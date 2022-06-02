@@ -1,0 +1,97 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+/*
+	Program Description:
+	This program reads a users input, then calculates the values for the volume and surface area
+	of a sphere, cone, and cylinder. 
+	Author Name: Marco Gallardo
+	Input Variables:
+		input for r
+		input for h
+	Process Flow:
+		creates functions to calculate surface area and volume
+		for each 
+		asks the user for radius input and height input
+		calculates from the formula created
+		then outputes the answers for each
+	output variables:
+		sphere: volume, surface area
+		cone: volume, surface area
+		cylinder: volume, surface area
+*/
+
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+#include <cstdlib>
+#include <iomanip>
+#include <string>
+
+
+using namespace std;
+
+
+double sphere_volume(double r)
+{ 
+	double volume = 4 * 3.14 * r * r * r / 3;
+	return volume;
+}
+
+double sphere_surface(double r)
+{
+	double surface = 4 * 3.14 * r * r;
+	return surface;
+}
+
+double cylinder_volume(double r, double h)
+{
+	double volume = 3.14 * r * r * h;
+	return volume;
+}
+
+double cylinder_surface(double r, double h)
+{
+	double surface = 2 * 3.14 * r * r + 2 * 3.14 * r * h;
+	return surface;
+}
+
+double cone_volume(double r, double h)
+{
+	double volume =  3.14 * r * r * h / 3;
+	return volume;
+}
+
+double cone_surface(double r, double h)
+{
+	double surface = 3.14 * r * (r + sqrt(h * h + r * r));
+	return surface;
+}
+
+int main()
+{
+
+	double r;
+	double h;
+	
+
+	cout << "Please enter the radius: ";
+	cin >> r;
+	cout << "Please enter a height: ";
+	cin >> h;
+	cout << "The volume of a sphere is: " << sphere_volume(r) << endl;
+	cout << "The surface area of a sphere is: " << sphere_surface(r) << endl;
+	cout << "The volume of a cylinder is: " << cylinder_volume(r, h) << endl;
+	cout << "The surface area of a cylinder is: " << cylinder_surface(r, h) << endl;
+	cout << "The volume area of a cone is: " << cone_volume(r, h) << endl;
+	cout << "The surface area of a cone is: " << cone_surface(r, h) << endl;
+
+
+	
+
+
+
+
+	system("pause");
+	return 0;
+}
+

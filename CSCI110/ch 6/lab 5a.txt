@@ -1,0 +1,82 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <algorithm>
+#include <iterator>
+
+using namespace std;
+
+bool equals(int a[], int a_size, int b[], int b_size)
+{
+	
+	if (a_size != b_size)
+	{
+		return false;
+	}
+	else
+	{
+		for (int i = 0; i < a_size; i++)
+		{
+			if (a[i] != b[i])
+			{
+				return false;
+			}
+		}
+	}
+	return true;
+}
+
+int main()
+{
+	const int capacity = 1000;
+	int values[capacity];
+	int current_size1 = 0;
+	bool equal;
+
+	cout <<"Please enter values, Q to quit:" << endl;
+	int input;
+	while (cin >> input)
+	{
+		if (current_size1 < capacity)
+		{
+			values[current_size1] = input;
+			current_size1++;
+		}
+	}
+	cin.clear();
+	cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+	
+	cout << endl;
+	
+	int values2[capacity];
+	int current_size2 = 0;
+
+	cout <<"Please enter values, Q to quit:" << endl;
+	int input2;
+	while (cin >> input2)
+	{
+		if (current_size2 < capacity)
+		{
+			values2[current_size2] = input2;
+			current_size2++;
+		}
+	}
+	cin.clear();
+	cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+	
+	if (equals(values, current_size1, values2, current_size2))
+	{
+		cout << "The arrays are the same" << endl;
+	}
+	else 
+	{
+		cout << "The arrays are different." << endl;
+	}
+
+	system("pause");
+	return main();
+}
+

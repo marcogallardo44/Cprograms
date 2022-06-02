@@ -1,0 +1,11 @@
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 9\HW 9 (grocery)\HW 9 (grocery)\bin\Debug\netcoreapp3.0\HW 9 (grocery).exe
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 9\HW 9 (grocery)\HW 9 (grocery)\bin\Debug\netcoreapp3.0\HW 9 (grocery).deps.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 9\HW 9 (grocery)\HW 9 (grocery)\bin\Debug\netcoreapp3.0\HW 9 (grocery).runtimeconfig.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 9\HW 9 (grocery)\HW 9 (grocery)\bin\Debug\netcoreapp3.0\HW 9 (grocery).runtimeconfig.dev.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 9\HW 9 (grocery)\HW 9 (grocery)\bin\Debug\netcoreapp3.0\HW 9 (grocery).dll
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 9\HW 9 (grocery)\HW 9 (grocery)\bin\Debug\netcoreapp3.0\HW 9 (grocery).pdb
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 9\HW 9 (grocery)\HW 9 (grocery)\obj\Debug\netcoreapp3.0\HW 9 (grocery).csprojAssemblyReference.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 9\HW 9 (grocery)\HW 9 (grocery)\obj\Debug\netcoreapp3.0\HW 9 (grocery).AssemblyInfoInputs.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 9\HW 9 (grocery)\HW 9 (grocery)\obj\Debug\netcoreapp3.0\HW 9 (grocery).AssemblyInfo.cs
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 9\HW 9 (grocery)\HW 9 (grocery)\obj\Debug\netcoreapp3.0\HW 9 (grocery).dll
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 9\HW 9 (grocery)\HW 9 (grocery)\obj\Debug\netcoreapp3.0\HW 9 (grocery).pdb

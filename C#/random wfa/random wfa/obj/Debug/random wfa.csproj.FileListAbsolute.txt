@@ -1,0 +1,10 @@
+C:\Users\magallardo1\Desktop\random wfa\random wfa\bin\Debug\random wfa.exe.config
+C:\Users\magallardo1\Desktop\random wfa\random wfa\bin\Debug\random wfa.exe
+C:\Users\magallardo1\Desktop\random wfa\random wfa\bin\Debug\random wfa.pdb
+C:\Users\magallardo1\Desktop\random wfa\random wfa\obj\Debug\random wfa.csprojAssemblyReference.cache
+C:\Users\magallardo1\Desktop\random wfa\random wfa\obj\Debug\random_wfa.Form1.resources
+C:\Users\magallardo1\Desktop\random wfa\random wfa\obj\Debug\random_wfa.Properties.Resources.resources
+C:\Users\magallardo1\Desktop\random wfa\random wfa\obj\Debug\random wfa.csproj.GenerateResource.cache
+C:\Users\magallardo1\Desktop\random wfa\random wfa\obj\Debug\random wfa.csproj.CoreCompileInputs.cache
+C:\Users\magallardo1\Desktop\random wfa\random wfa\obj\Debug\random wfa.exe
+C:\Users\magallardo1\Desktop\random wfa\random wfa\obj\Debug\random wfa.pdb

@@ -1,0 +1,88 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+/*
+	Program Description:
+	This program reads a users input, determins if the first is greater than the last, and switches them.
+	Author Name: Marco Gallardo
+	Input Variables:
+		input for a
+		input for b
+	Process Flow:
+		creates a function for sorting
+		asks for user input
+		checks if the inputs are valid
+		outputs the order of number inputted
+		checks if the first is greater than the second
+		if it is, the program will sort it then show it
+	output variables:
+		outputs a and b
+*/
+
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+void sort2(int& a, int& b)
+{
+	if (a > b)
+	{
+		int c = a;
+		a = b;
+		b = c;
+	}
+	else 
+	{
+		a = a;
+		b = b;
+	}
+	return;
+}
+
+
+
+int main()
+{
+	int a = 0;
+	int b = 0;
+	
+	
+	cout << "Please enter two numbers: ";
+	cin >> a >> b;
+
+	if(cin.fail())
+	{
+		cin.clear();
+		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		cout << "The input does not work press SPACE and try again." << endl;
+		system("pause");
+		return main();
+	}
+
+
+	cout << "You put in that: " << endl; 
+	cout << "A = " << a << endl;
+	cout << "B = " << b << endl;
+
+	
+
+	if (a > b)
+	{
+		cout << "The new order of your input is:" << endl;
+		sort2(a, b);
+		cout << "A = " << a << endl;
+		cout << "B = " << b << endl;
+	}
+	else
+	{
+		cout << "The order of your input will not change." << endl;
+		cout << "A = " << a << endl;
+		cout << "B = " << b << endl;
+	}
+
+
+
+	system("pause");
+	return 0;
+}
+

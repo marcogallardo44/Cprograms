@@ -1,0 +1,22 @@
+C:\Users\magallardo1\Desktop\odd or even\odd or even\bin\Debug\netcoreapp2.1\odd or even.deps.json
+C:\Users\magallardo1\Desktop\odd or even\odd or even\bin\Debug\netcoreapp2.1\odd or even.runtimeconfig.json
+C:\Users\magallardo1\Desktop\odd or even\odd or even\bin\Debug\netcoreapp2.1\odd or even.runtimeconfig.dev.json
+C:\Users\magallardo1\Desktop\odd or even\odd or even\bin\Debug\netcoreapp2.1\odd or even.dll
+C:\Users\magallardo1\Desktop\odd or even\odd or even\bin\Debug\netcoreapp2.1\odd or even.pdb
+C:\Users\magallardo1\Desktop\odd or even\odd or even\obj\Debug\netcoreapp2.1\odd or even.csprojAssemblyReference.cache
+C:\Users\magallardo1\Desktop\odd or even\odd or even\obj\Debug\netcoreapp2.1\odd or even.csproj.CoreCompileInputs.cache
+C:\Users\magallardo1\Desktop\odd or even\odd or even\obj\Debug\netcoreapp2.1\odd or even.AssemblyInfoInputs.cache
+C:\Users\magallardo1\Desktop\odd or even\odd or even\obj\Debug\netcoreapp2.1\odd or even.AssemblyInfo.cs
+C:\Users\magallardo1\Desktop\odd or even\odd or even\obj\Debug\netcoreapp2.1\odd or even.dll
+C:\Users\magallardo1\Desktop\odd or even\odd or even\obj\Debug\netcoreapp2.1\odd or even.pdb
+D:\Marco USB Backup\C#\odd or even\odd or even\bin\Debug\netcoreapp2.1\odd or even.deps.json
+D:\Marco USB Backup\C#\odd or even\odd or even\bin\Debug\netcoreapp2.1\odd or even.runtimeconfig.json
+D:\Marco USB Backup\C#\odd or even\odd or even\bin\Debug\netcoreapp2.1\odd or even.runtimeconfig.dev.json
+D:\Marco USB Backup\C#\odd or even\odd or even\bin\Debug\netcoreapp2.1\odd or even.dll
+D:\Marco USB Backup\C#\odd or even\odd or even\bin\Debug\netcoreapp2.1\odd or even.pdb
+D:\Marco USB Backup\C#\odd or even\odd or even\obj\Debug\netcoreapp2.1\odd or even.csprojAssemblyReference.cache
+D:\Marco USB Backup\C#\odd or even\odd or even\obj\Debug\netcoreapp2.1\odd or even.csproj.CoreCompileInputs.cache
+D:\Marco USB Backup\C#\odd or even\odd or even\obj\Debug\netcoreapp2.1\odd or even.AssemblyInfoInputs.cache
+D:\Marco USB Backup\C#\odd or even\odd or even\obj\Debug\netcoreapp2.1\odd or even.AssemblyInfo.cs
+D:\Marco USB Backup\C#\odd or even\odd or even\obj\Debug\netcoreapp2.1\odd or even.dll
+D:\Marco USB Backup\C#\odd or even\odd or even\obj\Debug\netcoreapp2.1\odd or even.pdb

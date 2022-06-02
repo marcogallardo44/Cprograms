@@ -1,0 +1,93 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	float Richter_Scale = 0;
+	cout << "Please enter the Richter_Scale" << endl;
+	cin >> Richter_Scale;
+
+	if (Richter_Scale >= 8.0)
+	{
+		cout << "Most structures fall " << endl;
+	}
+	else
+	{
+		if (Richter_Scale >= 7.0)
+		{
+			cout << "Many buildings destroyed " << endl;
+		}
+		else 
+		{
+			if (Richter_Scale >= 6.0)
+			{
+				cout << "Many buildings considerably damaged, some callapse " << endl;
+			}
+			else
+			{
+				if (Richter_Scale >= 4.5)
+				{
+					cout << "Damage to poorly sonstructed buildings " << endl;
+				}
+				else
+				{
+					cout << "No significant damage to buildings " << endl;
+				}
+			}
+		}
+	}
+			
+	system("pause");
+	return 0;
+}
+
+
+
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	float Richter_Scale = 0;
+	cout << "Please enter the Richter_Scale" << endl;
+	cin >> Richter_Scale;
+
+	if (Richter_Scale >= 8.0)
+	{
+		cout << "Most structures fall " << endl;
+	}
+	else if (Richter_Scale >= 7.0)
+	{
+		cout << "Many buildings destroyed " << endl;
+	}
+		
+	else if (Richter_Scale >= 6.0)
+	{
+		cout << "Many buildings considerably damaged, some callapse " << endl;
+	}
+	else if (Richter_Scale >= 4.5)
+	{
+		cout << "Damage to poorly sonstructed buildings " << endl;
+	}
+	else
+	{
+		cout << "No significant damage to buildings " << endl;
+	}
+
+			
+	system("pause");
+	return 0;
+}
+

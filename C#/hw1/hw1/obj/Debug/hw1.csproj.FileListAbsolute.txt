@@ -1,0 +1,15 @@
+G:\Marco USB Backup\C#\hw1\hw1\bin\Debug\hw1.exe.config
+G:\Marco USB Backup\C#\hw1\hw1\bin\Debug\hw1.exe
+G:\Marco USB Backup\C#\hw1\hw1\bin\Debug\hw1.pdb
+G:\Marco USB Backup\C#\hw1\hw1\obj\Debug\hw1.csprojAssemblyReference.cache
+G:\Marco USB Backup\C#\hw1\hw1\obj\Debug\MainWindow.g.cs
+G:\Marco USB Backup\C#\hw1\hw1\obj\Debug\App.g.cs
+G:\Marco USB Backup\C#\hw1\hw1\obj\Debug\hw1_MarkupCompile.cache
+G:\Marco USB Backup\C#\hw1\hw1\obj\Debug\hw1_MarkupCompile.lref
+G:\Marco USB Backup\C#\hw1\hw1\obj\Debug\MainWindow.baml
+G:\Marco USB Backup\C#\hw1\hw1\obj\Debug\hw1.g.resources
+G:\Marco USB Backup\C#\hw1\hw1\obj\Debug\hw1.Properties.Resources.resources
+G:\Marco USB Backup\C#\hw1\hw1\obj\Debug\hw1.csproj.GenerateResource.cache
+G:\Marco USB Backup\C#\hw1\hw1\obj\Debug\hw1.csproj.CoreCompileInputs.cache
+G:\Marco USB Backup\C#\hw1\hw1\obj\Debug\hw1.exe
+G:\Marco USB Backup\C#\hw1\hw1\obj\Debug\hw1.pdb

@@ -1,0 +1,581 @@
+RANDGEN.H
+
+#ifndef RandGen_H
+#define RandGen_H
+
+#include "stdafx.h"
+#include<iostream>
+#include <ctime>
+#include <random>
+
+using namespace std;
+
+class RandGen
+{
+public:
+	RandGen();
+	/*void RandGenlotto(int[], int, int, int, int);
+	void RandGenDay();
+	void RandGenTime();
+	void RandGenString();
+	void display(int[], int);*/
+	void setRandDay(int,int,int);
+
+private:
+	const int lotteryDigits = 47;
+	const int megaNumber = 27;
+	const int SIZE = 5;
+	int randhour;
+	int rnadminute;
+	int randsecond;
+	int randday;
+	int randmonth;
+	int randyear;
+
+
+
+};
+
+
+#endif
+
+
+------------------------------------------------------------------------
+RANDGEN.CPP
+
+#include "stdafx.h"
+#include<iostream>
+#include <ctime>
+#include <random>
+#include "RandGen.h"
+using namespace std;
+
+RandGen::RandGen()
+{
+	srand(time(0));
+}
+
+void RandGenlotto(int lotto[], int mega, int SIZE, int lotteryDigits, int megaNumber)
+{
+	srand(time(0));
+
+
+	for (int count = 0; count<SIZE; count++)
+	{
+		lotto[count] = 1 + rand() % lotteryDigits;
+	}
+	mega = 1 + rand() % megaNumber;
+
+}
+
+void RandGen::display(int lotto[], int mega)
+{
+	cout << "\nThe winning lottery numbers are: " << lotto[0] << " "
+		<< lotto[1] << " " << lotto[2] << " " << lotto[3] << " " << lotto[4] << endl;
+	cout << mega << endl;
+}
+
+void RandGen::setRandDay(int m, int d, int y)
+{
+	m = 1 + rand() % 13;
+	d = 1 + rand() % 31;
+	y = 1900 + rand() % (2100 - 1900);
+
+	randmonth = m;
+	randday = d;
+	randyear = y;
+}
+
+
+
+
+
+
+------------------------------------------------------------------------
+RANDDAY.H
+
+#ifndef RandDay_H
+#define RandDay_H
+
+#include "stdafx.h"
+#include<iostream>
+#include <ctime>
+#include <random>
+#include <array>
+
+using namespace std;
+
+class RandDay
+{
+	friend ostream& operator<<(ostream&, const RandDay&);
+public:
+	RandDay(int m = 1, int d = 1, int y = 1900);
+	void setRandDay(int, int, int);
+	static bool leapYear(int);
+	bool endOfMonth(int) const;
+private:
+	unsigned int month;
+	unsigned int day;
+	unsigned int year;
+
+	static const array<unsigned int, 13> days;
+	void helpIncrement();
+};
+
+
+#endif
+
+
+------------------------------------------------------------------------
+RANDDAY.CPP
+
+#include "stdafx.h"
+#include<iostream>
+#include <ctime>
+#include <random>
+#include<cstdlib>
+#include <array>
+#include "RandDay.h"
+#include "RandGen.h"
+#include <string>
+using namespace std;
+
+const array<unsigned int, 13> RandDay::days{ 0,31,28,31,30,31,30,31,31,30,31,30,31 };
+
+RandDay::RandDay(int month, int day, int year)
+
+{
+	setRandDay(month, day, year);
+}
+
+void RandDay::setRandDay(int mm, int dd, int yy)
+{
+	
+	srand(time(0));
+	mm = 1 + rand() % 12;
+	dd = 1 + rand() % 31;
+	yy = 1900 + rand() % (2100 - 1900);
+
+	month = mm;
+	day = dd;
+	year = 2017;
+}
+
+bool RandDay::leapYear(int testyear)
+{
+	return(testyear % 400 == 0 || (testyear % 100 != 0 && testyear % 4 == 0));
+}
+
+bool RandDay::endOfMonth(int testday)const
+{
+	if (month == 2 && leapYear(year))
+	{
+		return testday == 29;
+	}
+	else
+	{
+		return testday == days[month];
+	}
+}
+
+void RandDay::helpIncrement()
+{
+	if (!endOfMonth(day))
+	{
+		day = day + 1;
+	}
+	else
+	{
+		if (month < 12)
+		{
+			month = month + 1;
+			day = 1;
+		}
+		else
+		{
+			year = year + 1;
+			month = 1;
+			day = 1;
+		}
+	}
+}
+
+ostream& operator <<(ostream& output, const RandDay& d)
+{
+	static string monthName[13]{ "","January","Febuary","March","April","May","June","July","August",
+		"September","October","November","December" };
+	output << monthName[d.month] << ' ' << d.day << ", " << d.year;
+	return output;
+}
+
+
+------------------------------------------------------------------------
+RANDLOTTO.H
+
+#include "stdafx.h"
+#include<iostream>
+#include <ctime>
+#include <random>
+#include <array>
+
+#include <string>
+using namespace std;
+
+class RandLotto
+{
+	friend ostream& operator<<(ostream&, const RandLotto&);
+public:
+	RandLotto(int = 1, int = 1, int = 1, int = 1, int = 1, int = 1);
+	void setRandLotto(int, int, int, int, int, int);
+private:
+	int a;
+	int b;
+	int c;
+	int d;
+	int e;
+	int f;
+};
+
+
+------------------------------------------------------------------------
+RANDLOTTO.CPP
+
+#include "stdafx.h"
+#include<iostream>
+#include <ctime>
+#include <random>
+#include <array>
+#include <cstdlib>
+#include "RandLotto.h"
+#include <string>
+using namespace std;
+
+RandLotto::RandLotto(int a, int b, int c, int d, int e, int f)
+
+{
+	setRandLotto(a, b, c,d,e,f);
+}
+
+void RandLotto::setRandLotto(int aa,int bb,int cc,int dd,int ee,int ff)
+{
+	srand(time(0));
+	aa = 1 + rand() % 47;
+	bb = 1 + rand() % 47;
+	cc = 1 + rand() % 47;
+	dd = 1 + rand() % 47;
+	ee = 1 + rand() % 47;
+	ff = 1 + rand() % 27;
+	a = aa;
+	b = bb;
+	c = cc;
+	d = dd;
+	e = ee;
+	f = ff;
+}
+
+ostream& operator <<(ostream& output, const RandLotto& rand)
+{
+	output <<"Super Lotto Plus numbers are: " << rand.a << " " << rand.b << " " << rand.c << " " 
+		<< rand.d << " " << rand.e << "\nMega Number is: " << rand.f;
+	return output;
+}
+
+
+------------------------------------------------------------------------
+RANDTIME.H
+
+#ifndef RandTime_H
+#define RandTime_H
+
+#include "stdafx.h"
+#include<iostream>
+#include <ctime>
+#include <random>
+#include <array>
+#include <string>
+
+using namespace std;
+
+class RandTime
+{
+public:
+	explicit RandTime(int = 0, int = 0, int = 0);
+	
+	void setRandTime(int, int, int);
+	
+
+	int getHour() const;
+	int  getMinute() const;
+	int  getSecond() const;
+
+	string toStandardString() const;
+private:
+	int hour{ 0 };
+	int minute{ 0 };
+	int second{ 0 };
+};
+
+#endif
+
+
+------------------------------------------------------------------------
+RANDTIME.CPP
+
+#include "stdafx.h"
+#include<iostream>
+#include <ctime>
+#include <random>
+#include <cstdlib>
+#include <array>
+#include <string>
+#include <iomanip>
+#include <stdexcept>
+#include <sstream>
+#include "RandTime.h"
+using namespace std;
+
+RandTime::RandTime(int hour, int minute, int second)
+{
+	setRandTime(hour, minute, second);
+}
+
+void RandTime::setRandTime(int h, int m, int s)
+{
+	srand(time(0));
+	h = rand() % 24;
+	hour = h;
+	m = rand() % 60;
+	minute = m;
+	s = rand() % 60;
+	second = s;
+}
+
+
+
+int RandTime::getHour() const { return hour; }
+int  RandTime::getMinute() const { return minute; }
+int RandTime::getSecond() const { return second; }
+
+string RandTime::toStandardString() const
+{
+	ostringstream output;
+	output << ((getHour() == 0 || getHour() == 12) ? 12 : getHour() % 12)
+		<< ":" << setfill('0') << setw(2) << getMinute() << ":" << setw(2)
+		<< getSecond() << (hour < 12 ? " AM" : " PM");
+	return output.str();
+}
+
+
+------------------------------------------------------------------------
+RANDMSG.H
+
+#include "stdafx.h"
+#include<iostream>
+#include <ctime>
+#include <random>
+#include <iomanip>
+#include <stdexcept>
+#include <sstream>
+
+using namespace std;
+
+class RandMsg
+{
+	friend ostream& operator<<(ostream&, const RandMsg&);
+public:
+	RandMsg(string randcha = "h");
+	void setRandMsg(string);
+private:
+	string randmsg[4] = { "Have a nice day! ", "Thanks for playing! ",
+		"Try again! ", "Come back soon! " };
+};
+
+
+------------------------------------------------------------------------
+RANDMSG.CPP
+
+#include "stdafx.h"
+#include<iostream>
+#include <ctime>
+#include <random>
+#include <iomanip>
+#include <stdexcept>
+#include <sstream>
+
+#include"RandMsg.h"
+using namespace std;
+
+RandMsg::RandMsg(string randmsg)
+{
+	setRandMsg(randmsg);
+}
+
+void RandMsg::setRandMsg(string rr)
+{
+	srand(time(0));
+	int r = 1+rand() % 4;
+	if(r == 1)
+	{
+		randmsg[1] = "Have a nice day! ";
+	}
+	if (r == 2)
+	{
+		randmsg[1] = "Thanks for playing! ";
+	}
+	if(r==3)
+	{
+		randmsg[1] = "Try again! ";
+	}
+	if (r == 4)
+	{
+		randmsg[1] = "Come back soon! ";
+	}
+
+
+
+}
+
+ostream& operator <<(ostream& output, const RandMsg& d)
+{
+	
+	output << d.randmsg[1] << endl;
+	return output;
+}
+
+
+------------------------------------------------------------------------
+RANDSTR.H
+
+#include "stdafx.h"
+#include<iostream>
+#include <ctime>
+#include <random>
+#include <iomanip>
+#include <stdexcept>
+#include <sstream>
+
+using namespace std;
+
+class RandStr
+{
+	friend ostream& operator<<(ostream&, const RandStr&);
+public:
+	RandStr(string randcha = "h");
+	void setRandStr(string);
+private:
+	string randchar[256] = { "0","1","2","3","4","5","6","7","8","9","!","@","#","$","%","^","&","*",
+		"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y",
+		"Z", "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","u","v","w","x","y","z" };
+	
+};
+
+
+------------------------------------------------------------------------
+RANDSTR.CPP
+
+#include "stdafx.h"
+#include<iostream>
+#include <ctime>
+#include <random>
+#include <iomanip>
+#include <stdexcept>
+#include <sstream>
+
+#include"RandStr.h"
+using namespace std;
+
+RandStr::RandStr(string randchar)
+{
+	setRandStr(randchar);
+}
+
+void RandStr::setRandStr(string rr)
+{
+	srand(time(0));
+	for (int i = 0; i < 256; i++)
+	{
+		
+		rr = 'A' + rand() % 26;
+		randchar[i] = rr;
+	}
+
+	
+	
+}
+
+ostream& operator <<(ostream& output, const RandStr& d)
+{
+	output << "Random string: ";
+	int q = rand()%256;
+	for (int i = 0; i <= q; i++)
+	{
+		
+		output << d.randchar[i];
+	}
+	return output;
+}
+
+
+------------------------------------------------------------------------
+CONSOLE.CPP
+
+// rand.cpp, Marco Gallardo, c++ Language and Objects
+//Project #4. MS Visual Studio 2017, 12/5/17
+
+#include "stdafx.h"
+#include<iostream>
+#include <ctime>
+#include <random>
+#include <iomanip>
+#include <stdexcept>
+#include <sstream>
+#include"RandGen.h"
+#include"RandDay.h"
+#include"RandTime.h"
+#include"RandLotto.h"
+#include"RandMsg.h"
+#include"RandStr.h"
+using namespace std;
+
+
+int main()
+{
+	
+	/*int lotto[5] = { 0,0,0,0,0 };
+	int mega = 0;
+
+	RandGenlotto(lotto, mega, SIZE, lotteryDigits, megaNumber);
+	display(lotto, mega);*/
+	RandTime t1;
+	
+	cout << t1.toStandardString() << endl;
+	RandDay d1;
+
+	cout << d1 << endl;
+	
+
+	RandLotto r;
+	cout << r << endl;
+	cout << endl;
+
+	RandStr d;
+	cout << d << endl;
+
+	RandMsg k;
+	cout << k << endl;
+
+	system("pause");
+	return main();
+}
+
+/*This part of the project was assinged to me because none of the other members of my group
+wanted to do this problem. It was pretty challenging because there was nothing to base my 
+code off. Nothing from the book to look at or use. It was all by myself. I dont even know
+what the output should look like because the test data you gave us has nothing to do with
+what the problem is, also its just random output. So i pretty much guessed the whole code.
+I think I did a pretty good job on the code, due to the fact that there wasnt many resources
+for help. 
+*/
+
+
+------------------------------------------------------------------------

@@ -1,0 +1,115 @@
+"Acount.h"
+// lab 1: Account.h
+// Definition of Account class.
+class Account
+{
+public:
+	Account(int);
+	void credit(int);
+	void debit(int);
+	int getBalance();
+private:
+	int balance;
+}; 
+
+
+
+"Account.cpp"
+// Lab 1: Account.cpp
+// Member-function definitions for class Account.
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+#include "Account.h" // include definition of class Account
+
+// Account constructor initializes data member balance
+Account::Account(int initialBalance)
+{
+	balance = 0; // assume that the balance begins at 0
+
+				 // if initialBalance is greater than 0, set this value as the
+				 // balance of the Account; otherwise, balance remains 0
+	if (initialBalance > 0)
+		balance = initialBalance;
+	
+	// if initialBalance is negative, print error message
+	if (initialBalance < 0)
+		cout << "Error: Initial balance cannot be negative.\n" << endl;
+} // end Account constructor
+  
+  // credit (add) an amount to the account balance
+void Account::credit(int amount)
+{
+	balance = balance + amount; // add amount to balance
+} // end function credit
+  
+  /* write code to define member function debit. */
+void Account::debit(int amount)
+{
+	if (amount > balance)
+	{
+		cout << "Debit amount exceeded account balance. No transaction." << endl;
+	}
+	else
+	{
+		balance = balance - amount; //subtract amount from balance
+	}
+}//end function debit
+
+  // return the account balance
+int Account::getBalance()
+{
+	return balance; // gives the value of balance to the calling function
+} // end function getBalance
+
+
+
+"AccountTest.cpp"
+
+// Lab 1: AccountTest.cpp
+// Create and manipulate Account objects.
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+// include definition of class Account from Account.h
+#include "Account.h"
+
+// function main begins program execution
+int main()
+{
+	Account account1(50); // create Account object
+	Account account2(0); // create Account object
+
+	 // display initial balance of each object
+	cout << "account1 balance: $" << account1.getBalance() << endl;
+	cout << "account2 balance: $" << account2.getBalance() << endl;
+
+	int withdrawalAmount; // stores withdrawal amount read from user
+
+	cout << "\nEnter withdrawal amount for account1: "; // prompt
+	cin >> withdrawalAmount; // obtain user input
+	cout << "\nsubtracting " << withdrawalAmount
+		<< " from account1 balance\n\n";
+	/* write code to withdraw money from account1 */
+	account1.debit(withdrawalAmount);
+	
+	// display balances
+	cout << "account1 balance: $" << account1.getBalance() << endl;
+	cout << "account2 balance: $" << account2.getBalance() << endl;
+	
+	cout << "\nEnter withdrawal amount for account2: "; // prompt
+	cin >> withdrawalAmount; // obtain user input
+	cout << "\nsubtracting " << withdrawalAmount
+		<< " from account2 balance\n\n";
+	/* write code to withdraw money from account2 */
+	account2.debit(withdrawalAmount);
+
+	// display balances
+	cout << "account1 balance: $" << account1.getBalance() << endl;
+	cout << "account2 balance: $" << account2.getBalance() << endl;
+
+	system("pause");
+	return 0;
+} // end main

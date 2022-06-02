@@ -1,0 +1,54 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+/*
+Program Description:
+Creat a multiplication table
+
+Author Name:
+Marco Gallardo
+
+Input Variables:
+none
+
+Process Flow:
+Creates a multiplication table by setting two variables equal to 1
+then flowing an multiplying by each other until they reach the max
+
+Output Variables:
+multiplication table from 1 - 100
+*/
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+
+
+using namespace std;
+
+
+
+int main()
+{
+	cout << "MULTIPLICATION TABLE " << endl;	
+
+	int xmax = 10;
+	int nmax = 10;
+
+	for (double x = 1; x <= xmax; x++)
+	{
+		for (int n = 1; n <= nmax; n++)
+		{
+			cout << setw(5) << x * n;
+		}
+		cout << endl;
+	}
+	
+
+
+
+
+	system("pause");
+	return 0;
+}
+

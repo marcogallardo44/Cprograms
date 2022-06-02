@@ -1,0 +1,31 @@
+// marco2.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int X;
+	int Y;
+	int Z;
+	cout << "Please enter the value of X ";
+	cin >> X;
+	cout << "Please enter the value of Y ";
+	cin >> Y;
+	Z = X + Y;
+	cout << "The total of X and Y is " << Z << endl;
+	if (X > Y)
+	{
+		cout << "X is greater than Y " << endl;
+	}
+	else
+	{
+		cout << "X is less than Y " << endl;
+	}
+	system("pause");
+	return 0;
+}
+

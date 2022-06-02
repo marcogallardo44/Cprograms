@@ -1,0 +1,11 @@
+C:\Users\magallardo1\Desktop\HW 4 (fib)\HW 4 (fib)\obj\Debug\netcoreapp2.1\HW 4 (fib).csprojAssemblyReference.cache
+C:\Users\magallardo1\Desktop\HW 4 (fib)\HW 4 (fib)\obj\Debug\netcoreapp2.1\HW 4 (fib).csproj.CoreCompileInputs.cache
+C:\Users\magallardo1\Desktop\HW 4 (fib)\HW 4 (fib)\obj\Debug\netcoreapp2.1\HW 4 (fib).AssemblyInfoInputs.cache
+C:\Users\magallardo1\Desktop\HW 4 (fib)\HW 4 (fib)\obj\Debug\netcoreapp2.1\HW 4 (fib).AssemblyInfo.cs
+C:\Users\magallardo1\Desktop\HW 4 (fib)\HW 4 (fib)\bin\Debug\netcoreapp2.1\HW 4 (fib).deps.json
+C:\Users\magallardo1\Desktop\HW 4 (fib)\HW 4 (fib)\bin\Debug\netcoreapp2.1\HW 4 (fib).runtimeconfig.json
+C:\Users\magallardo1\Desktop\HW 4 (fib)\HW 4 (fib)\bin\Debug\netcoreapp2.1\HW 4 (fib).runtimeconfig.dev.json
+C:\Users\magallardo1\Desktop\HW 4 (fib)\HW 4 (fib)\bin\Debug\netcoreapp2.1\HW 4 (fib).dll
+C:\Users\magallardo1\Desktop\HW 4 (fib)\HW 4 (fib)\bin\Debug\netcoreapp2.1\HW 4 (fib).pdb
+C:\Users\magallardo1\Desktop\HW 4 (fib)\HW 4 (fib)\obj\Debug\netcoreapp2.1\HW 4 (fib).dll
+C:\Users\magallardo1\Desktop\HW 4 (fib)\HW 4 (fib)\obj\Debug\netcoreapp2.1\HW 4 (fib).pdb

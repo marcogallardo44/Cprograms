@@ -1,0 +1,88 @@
+// idontfuckingknow.cpp : Defines the entry point for the console application.
+//
+/*
+Program Description:
+Input your letter grade to get a score.
+
+Author Name:
+Marco Gallardo
+
+Input Variables:
+Letter grade and sign if any
+
+Process Flow:
+Input letter grade, 
+then the program decides whether there is a sign or not, 
+determines what letter you have, 
+then finally add or subtracts .3 from the score you would be getting from your letter grade and outputs is.
+
+Output Variables:
+Finalscore
+
+*/
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <iomanip>
+
+
+using namespace std;
+
+int main()
+{
+
+	string input;
+	char grade;
+	char sign;
+	float score = 0.0;
+	float finalscore = 0.0;
+	
+
+	cout << fixed << setprecision(1) << "Please input your letter grade: " << endl;
+	cin >> input;
+
+	grade = input[0];
+	sign = input[1];
+
+	switch (sign)
+	{
+	case '+': score = +0.3; break;
+	case '-': score = -0.3; break;
+	default: score = 0.0; break;
+	}
+
+	switch (grade)
+	{
+	case 'A': finalscore = 4.0 + score; break;
+	case 'B': finalscore = 3.0 + score; break;
+	case 'C': finalscore = 2.0 + score; break;
+	case 'D': finalscore = 1.0 + score; break;
+	case 'F': finalscore = 0.0 + score; break;
+	default: finalscore = 0.0; break;
+	}
+
+	
+	
+
+	if (finalscore >= 4.0)
+	{
+		cout << 4.0 << endl;
+	}
+
+	else if (grade == 'F')
+	{
+		cout << 0.0 << endl;
+	}
+
+	else
+	{
+		cout << finalscore << endl;
+	}
+
+
+
+	system("pause");
+    return main();
+}
+

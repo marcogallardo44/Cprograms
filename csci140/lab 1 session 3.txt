@@ -1,0 +1,51 @@
+// ConsoleApplication11.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int number1;
+	int number2;
+	int number3;
+	int smallest;
+	int largest;
+
+	cout << "Input three different integers: ";
+	cin >> number1 >> number2 >> number3;
+
+	largest = number1;
+
+	if (number2 > largest)
+	{
+		largest = number1;
+	}
+	if (number3 > largest)
+	{
+		largest = number3;
+	}
+
+	smallest = number1;
+
+	if (number2 < smallest)
+	{
+		smallest = number2;
+	}
+	if (number3 < smallest)
+	{
+		number3 = smallest;
+	}
+
+	cout << "The sum of these three numbers is: " << number1 + number2 + number3 << endl;
+	cout << "The average of these three numbers is: " << (number1 + number2 + number3) / 3 << endl;
+	cout << "The product of these three numbers is: " << number1 * number2 * number3 << endl;
+	cout << "The largest of these three numbers is: " << largest << endl;
+	cout << "The smallest of these three numbers is: " << smallest << endl;
+
+
+	system("pause");
+    return 0;
+}
+

@@ -1,0 +1,4 @@
+﻿  bin2decimal.cpp
+c:\users\marco gallardo\documents\visual studio 2017\projects\bin2decimal\bin2decimal\bin2decimal.cpp(34): warning C4717: 'main': recursive on all control paths, function will cause runtime stack overflow
+  bin2decimal.vcxproj -> c:\users\marco gallardo\documents\visual studio 2017\Projects\bin2decimal\Debug\bin2decimal.exe
+  bin2decimal.vcxproj -> c:\users\marco gallardo\documents\visual studio 2017\Projects\bin2decimal\Debug\bin2decimal.pdb (Partial PDB)

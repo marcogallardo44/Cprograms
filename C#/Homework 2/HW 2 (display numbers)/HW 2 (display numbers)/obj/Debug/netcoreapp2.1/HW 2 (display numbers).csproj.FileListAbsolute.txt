@@ -1,0 +1,22 @@
+C:\Users\magallardo1\Desktop\HW 2 (display numbers)\HW 2 (display numbers)\bin\Debug\netcoreapp2.1\HW 2 (display numbers).deps.json
+C:\Users\magallardo1\Desktop\HW 2 (display numbers)\HW 2 (display numbers)\bin\Debug\netcoreapp2.1\HW 2 (display numbers).runtimeconfig.json
+C:\Users\magallardo1\Desktop\HW 2 (display numbers)\HW 2 (display numbers)\bin\Debug\netcoreapp2.1\HW 2 (display numbers).runtimeconfig.dev.json
+C:\Users\magallardo1\Desktop\HW 2 (display numbers)\HW 2 (display numbers)\bin\Debug\netcoreapp2.1\HW 2 (display numbers).dll
+C:\Users\magallardo1\Desktop\HW 2 (display numbers)\HW 2 (display numbers)\bin\Debug\netcoreapp2.1\HW 2 (display numbers).pdb
+C:\Users\magallardo1\Desktop\HW 2 (display numbers)\HW 2 (display numbers)\obj\Debug\netcoreapp2.1\HW 2 (display numbers).csprojAssemblyReference.cache
+C:\Users\magallardo1\Desktop\HW 2 (display numbers)\HW 2 (display numbers)\obj\Debug\netcoreapp2.1\HW 2 (display numbers).csproj.CoreCompileInputs.cache
+C:\Users\magallardo1\Desktop\HW 2 (display numbers)\HW 2 (display numbers)\obj\Debug\netcoreapp2.1\HW 2 (display numbers).AssemblyInfoInputs.cache
+C:\Users\magallardo1\Desktop\HW 2 (display numbers)\HW 2 (display numbers)\obj\Debug\netcoreapp2.1\HW 2 (display numbers).AssemblyInfo.cs
+C:\Users\magallardo1\Desktop\HW 2 (display numbers)\HW 2 (display numbers)\obj\Debug\netcoreapp2.1\HW 2 (display numbers).dll
+C:\Users\magallardo1\Desktop\HW 2 (display numbers)\HW 2 (display numbers)\obj\Debug\netcoreapp2.1\HW 2 (display numbers).pdb
+D:\Marco USB Backup\C#\Homework 2\HW 2 (display numbers)\HW 2 (display numbers)\bin\Debug\netcoreapp2.1\HW 2 (display numbers).deps.json
+D:\Marco USB Backup\C#\Homework 2\HW 2 (display numbers)\HW 2 (display numbers)\bin\Debug\netcoreapp2.1\HW 2 (display numbers).runtimeconfig.json
+D:\Marco USB Backup\C#\Homework 2\HW 2 (display numbers)\HW 2 (display numbers)\bin\Debug\netcoreapp2.1\HW 2 (display numbers).runtimeconfig.dev.json
+D:\Marco USB Backup\C#\Homework 2\HW 2 (display numbers)\HW 2 (display numbers)\bin\Debug\netcoreapp2.1\HW 2 (display numbers).dll
+D:\Marco USB Backup\C#\Homework 2\HW 2 (display numbers)\HW 2 (display numbers)\bin\Debug\netcoreapp2.1\HW 2 (display numbers).pdb
+D:\Marco USB Backup\C#\Homework 2\HW 2 (display numbers)\HW 2 (display numbers)\obj\Debug\netcoreapp2.1\HW 2 (display numbers).csprojAssemblyReference.cache
+D:\Marco USB Backup\C#\Homework 2\HW 2 (display numbers)\HW 2 (display numbers)\obj\Debug\netcoreapp2.1\HW 2 (display numbers).csproj.CoreCompileInputs.cache
+D:\Marco USB Backup\C#\Homework 2\HW 2 (display numbers)\HW 2 (display numbers)\obj\Debug\netcoreapp2.1\HW 2 (display numbers).AssemblyInfoInputs.cache
+D:\Marco USB Backup\C#\Homework 2\HW 2 (display numbers)\HW 2 (display numbers)\obj\Debug\netcoreapp2.1\HW 2 (display numbers).AssemblyInfo.cs
+D:\Marco USB Backup\C#\Homework 2\HW 2 (display numbers)\HW 2 (display numbers)\obj\Debug\netcoreapp2.1\HW 2 (display numbers).dll
+D:\Marco USB Backup\C#\Homework 2\HW 2 (display numbers)\HW 2 (display numbers)\obj\Debug\netcoreapp2.1\HW 2 (display numbers).pdb

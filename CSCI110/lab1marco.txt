@@ -1,0 +1,60 @@
+// marcolab1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	cout << "+--+--+--+ " << endl;
+	cout << "|  |  |  | " << endl;
+	cout << "+--+--+--+ " << endl;
+	cout << "|  |  |  | " << endl;
+	cout << "+--+--+--+ " << endl;
+	cout << "|  |  |  | " << endl;
+	cout << "+--+--+--+ " << endl;
+	system("pause");
+	return 0;
+}
+
+
+
+
+the correct one
+
+
+
+// marcolab1.cpp : Defines the entry point for the console application.
+//
+/* 
+Program desription: This program creates a grid to play tic tac toe
+
+Author: Marco Gallardo
+
+Input Variables: none
+
+Process flow: uses +--+--+--+ and |  |  |  | to make a grid
+
+Output variables: none
+*/
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	cout << "+--+--+--+ " << endl;
+	cout << "|  |  |  | " << endl;
+	cout << "+--+--+--+ " << endl;
+	cout << "|  |  |  | " << endl;
+	cout << "+--+--+--+ " << endl;
+	cout << "|  |  |  | " << endl;
+	cout << "+--+--+--+ " << endl;
+	system("pause");
+	return 0;
+}
+

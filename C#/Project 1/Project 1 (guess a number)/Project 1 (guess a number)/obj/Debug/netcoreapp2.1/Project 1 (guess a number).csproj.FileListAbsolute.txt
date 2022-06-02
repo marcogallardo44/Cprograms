@@ -1,0 +1,11 @@
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Project 1\Project 1 (guess a number)\Project 1 (guess a number)\bin\Debug\netcoreapp2.1\Project 1 (guess a number).deps.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Project 1\Project 1 (guess a number)\Project 1 (guess a number)\bin\Debug\netcoreapp2.1\Project 1 (guess a number).runtimeconfig.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Project 1\Project 1 (guess a number)\Project 1 (guess a number)\bin\Debug\netcoreapp2.1\Project 1 (guess a number).runtimeconfig.dev.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Project 1\Project 1 (guess a number)\Project 1 (guess a number)\bin\Debug\netcoreapp2.1\Project 1 (guess a number).dll
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Project 1\Project 1 (guess a number)\Project 1 (guess a number)\bin\Debug\netcoreapp2.1\Project 1 (guess a number).pdb
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Project 1\Project 1 (guess a number)\Project 1 (guess a number)\obj\Debug\netcoreapp2.1\Project 1 (guess a number).csprojAssemblyReference.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Project 1\Project 1 (guess a number)\Project 1 (guess a number)\obj\Debug\netcoreapp2.1\Project 1 (guess a number).csproj.CoreCompileInputs.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Project 1\Project 1 (guess a number)\Project 1 (guess a number)\obj\Debug\netcoreapp2.1\Project 1 (guess a number).AssemblyInfoInputs.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Project 1\Project 1 (guess a number)\Project 1 (guess a number)\obj\Debug\netcoreapp2.1\Project 1 (guess a number).AssemblyInfo.cs
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Project 1\Project 1 (guess a number)\Project 1 (guess a number)\obj\Debug\netcoreapp2.1\Project 1 (guess a number).dll
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Project 1\Project 1 (guess a number)\Project 1 (guess a number)\obj\Debug\netcoreapp2.1\Project 1 (guess a number).pdb

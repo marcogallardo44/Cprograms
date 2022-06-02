@@ -1,0 +1,7 @@
+﻿  EmployeeTest.cpp
+c:\users\csci140.instruction.001\source\repos\consoleapplication1\consoleapplication1\employeetest.cpp(26): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\csci140.instruction.001\source\repos\consoleapplication1\consoleapplication1\employeetest.cpp(29): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Employee.cpp
+  Generating Code...
+  ConsoleApplication1.vcxproj -> C:\Users\csci140.INSTRUCTION.001\source\repos\ConsoleApplication1\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> C:\Users\csci140.INSTRUCTION.001\source\repos\ConsoleApplication1\Debug\ConsoleApplication1.pdb (Partial PDB)

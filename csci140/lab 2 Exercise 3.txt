@@ -1,0 +1,141 @@
+Employee.h
+// Lab 3: Employee.h
+// Employee class definition.
+
+#include "stdafx.h"
+#include <string> // program uses C++ standard string class
+using namespace std;
+
+// Employee class definition
+class Employee
+{
+public:
+	/* Declare a constructor that has one parameter for each data member */
+	Employee(string, string, int);
+	/* Declare a set method for the employee’s first name */
+	void setFirstName(string);
+	/* Declare a get method for the employee’s first name */
+	string getFirstName();
+	/* Declare a set method for the employee’s last name */
+	void setLastName(string);
+	/* Declare a get method for the employee’s last name */
+	string getLastName();
+	/* Declare a set method for the employee’s monthly salary */
+	void setSalary(int);
+	/* Declare a get method for the employee’s monthly salary */
+	int getSalary();
+
+private:
+	/* Declare a string data member for the employee’s first name */
+	string firstName;
+	/* Declare a string data member for the employee’s last name */
+	string lastName;
+	/* Declare an int data member for the employee’s monthly salary */
+	int Salary;
+}; // end class Employee
+
+Employee.cpp
+// Lab 3: Employee.cpp
+// Employee class member-function definitions.
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+#include "Employee.h" // Employee class definition
+
+/* Define the constructor. Assign each parameter value to the appropriate data
+member. Write code that validates the value of salary to ensure that it is
+not negative. */
+Employee::Employee(string first, string last, int salary)
+{
+	setFirstName(first);
+	setLastName(last);
+	setSalary(salary);
+	if (salary < 0)
+	{
+		cout << "Not valid salary" << endl;
+	}
+}
+/* Define a set function for the first name data member. */
+void Employee::setFirstName(string first)
+{
+	firstName = first;
+}
+/* Define a get function for the first name data member. */
+string Employee::getFirstName()
+{
+	return firstName;
+}
+/* Define a set function for the last name data member. */
+void Employee::setLastName(string last)
+{
+	lastName = last;
+}
+/* Define a get function for the last name data member. */
+string Employee::getLastName()
+{
+	return lastName;
+}
+/* Define a set function for the monthly salary data member. Write code
+that validates the salary to ensure that it is not negative. */
+void Employee::setSalary(int salary)
+{
+	if (salary >= 0)
+	{
+		Salary = salary;
+	}
+	else
+	{
+		Salary = -salary;
+	}
+}
+/* Define a get function for the monthly salary data member. */
+int Employee::getSalary()
+{
+	return Salary;
+}
+
+
+
+EmployeeTest.cpp
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+#include "Employee.h" // include definition of class Employee
+
+// function main begins program execution
+int main()
+{
+	/* Create two Employee objects and assign them to Employee variables. */
+	Employee employee1("Bob", "Jones", 34500);
+	Employee employee2("Susan", "Baker", 37800);
+	
+	/* Output the first name, last name and salary for each Employee. */
+	cout << "Employee 1: " << employee1.getFirstName() << " " << employee1.getLastName()
+		<< "; " << "Yearly Salary: " << employee1.getSalary() << endl;
+
+	cout << "Employee 2: " << employee2.getFirstName() << " " << employee2.getLastName()
+		<< "; " << "Yearly Salary: " << employee2.getSalary() << endl;
+	/* Give each Employee a 10% raise. */
+	employee1.getSalary();
+	employee1.setSalary(34500 * 1.10);
+	
+	employee2.getSalary();
+	employee2.setSalary(37800 * 1.10);
+	
+	/* Output the first name, last name and salary of each Employee again. */
+	cout << "Employee 1: " << employee1.getFirstName() << " " << employee1.getLastName()
+		<< "; " << "Yearly Salary: " << employee1.getSalary() << endl;
+
+	cout << "Employee 2: " << employee2.getFirstName() << " " << employee2.getLastName()
+		<< "; " << "Yearly Salary: " << employee2.getSalary() << endl;
+
+	system("pause");
+    return 0;
+}// end main
+

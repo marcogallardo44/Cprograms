@@ -1,0 +1,97 @@
+HEADER.H
+
+// Lab 1: Complex.h
+#ifndef COMPLEX_H
+#define COMPLEX_H
+/* Write class definition for Complex */
+class Complex
+{
+public:
+	Complex(double, double);
+	void setComplexNumber(double, double);
+	void printComplex();
+	Complex add(const Complex &right);
+	Complex subtract(const Complex &right);
+	void setComplexNumber(double, double);
+private:
+	double realPart;
+	double imaginaryPart;
+
+};
+#endif
+
+COMPLEX.CPP
+
+// Lab 1: Complex.cpp
+// Member-function definitions for class Complex.
+#include <iostream>
+using namespace std;
+#include "Complex.h"
+Complex::Complex(double real, double imaginary)
+{
+	setComplexNumber(real, imaginary);
+} // end Complex constructor
+Complex Complex::add(const Complex &right)
+{
+	/* Write a statement to return a Complex object. Add
+	the realPart of right to the realPart of this Complex
+	object and add the imaginaryPart of right to the
+	imaginaryPart of this Complex object */
+	
+
+} // end function add
+Complex Complex::subtract(const Complex &right)
+{
+	/* Write a statement to return a Complex object. Subtract
+	the realPart of right from the realPart of this Complex
+	object and subtract the imaginaryPart of right from
+	the imaginaryPart of this Complex object */
+} // end function subtract
+void Complex::printComplex()
+{
+	cout << '(' << realPart << ", " << imaginaryPart << ')';
+} // end function printComplex
+void Complex::setComplexNumber(double rp, double ip)
+{
+	realPart = rp;
+	imaginaryPart = ip;
+} // end function setComplexNumber
+
+COMPLEXTEST.CPP
+
+// ConsoleApplication4.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+
+using namespace std;
+#include "Complex.h"
+
+int main()
+{
+	Complex a(1, 7), b(9, 2), c; // create three Complex objects
+	a.printComplex(); // output object a
+	cout << " + ";
+	b.printComplex(); // output object b
+	cout << " = ";
+	c = a.add(b); // invoke add function and assign to object c
+	c.printComplex(); // output object c
+	cout << '\n';
+	a.setComplexNumber(10, 1); // reset realPart and
+	b.setComplexNumber(11, 5); // and imaginaryPart
+	a.printComplex(); // output object a
+	cout << " - ";
+	b.printComplex(); // output object b
+	cout << " = ";
+	c = a.subtract(b); // invoke add function and assign to object c
+	c.printComplex(); // output object c
+	cout << endl;
+	// end main
+	
+
+	system("pause");
+    return 0;
+}
+

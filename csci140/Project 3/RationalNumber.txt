@@ -1,0 +1,230 @@
+Finished coding of Project 3 #1:
+
+Header: 
+#include <iostream>
+#ifndef RationalNumber_H
+#define RationalNumber_H
+using namespace std;
+class RationalNumber {
+public:
+	explicit RationalNumber(int = 0, int = 1); // RationalNumber constructor
+	int getnum() { return num; } // get numerator
+	int getdenom() { return denom; } // get denominator
+	void setFraction(int n, int d); // set fraction
+	friend ostream &operator<<(ostream &output, const RationalNumber&); // cout 
+	RationalNumber operator+(const RationalNumber &) const; // addition 
+	RationalNumber operator-(const RationalNumber &) const; // subraction
+	RationalNumber operator*(const RationalNumber &) const; // multiplication
+	RationalNumber operator/(const RationalNumber &) const; // division
+	void CompareFractions(const RationalNumber &); // compare < > =
+	void printRationalNumber(void);
+	void simplify(void);
+private:
+	int num; // numerator
+	int denom; // denominator
+	int temp; // temp
+};
+#endif
+
+cpp:
+/*
+RationalNumber.cpp
+This program does the basic arithmetics of two fractions and compares them
+Author: Jonathan Lu
+Class: CSCI140
+Project 3 - #1
+Compiler: MSVS 2017
+Date: 11/13/17
+Tests http://zeus.mtsac.edu/~hpop/proj3-140.txt
+*/
+
+#include "stdafx.h"
+#include <iostream>
+#include "RationalNumber.h"
+using namespace std;
+
+RationalNumber::RationalNumber(int number, int number2) :num{ number }, denom{ number2 } {};
+void RationalNumber::setFraction(int n, int d) // set fraction
+{
+	num = n;
+	denom = d;
+
+}
+ostream& operator<< (ostream &output, const RationalNumber&)
+{
+	RationalNumber number;
+	RationalNumber number2;
+
+	cout << "\n(" << number.num << "/ " <<
+		number.denom << ") \n" << number2.num << "/ " << number2.denom << endl;
+	return output;
+}
+RationalNumber RationalNumber::operator+(const RationalNumber &a) const // addition
+{
+	RationalNumber t;
+	t.num = a.num * denom + a.denom * num;
+	t.denom = a.denom*denom;
+	t.simplify();
+	return t;
+}
+RationalNumber RationalNumber::operator-(const RationalNumber &b) const // subraction
+{
+
+	RationalNumber t;
+	t.num = b.denom *num - denom * b.num;
+	t.denom = b.denom * denom;
+	t.simplify();
+	return t;
+}
+RationalNumber RationalNumber::operator*(const RationalNumber &c) const // multiplication
+{
+	RationalNumber t;
+	t.num = c.num * num;
+	t.denom = c.denom * denom;
+	t.simplify();
+	return t;
+}
+RationalNumber RationalNumber::operator/(const RationalNumber &d) const // division 	
+{
+	RationalNumber t;
+	t.num = d.denom * num;
+	t.denom = denom * d.num;
+	t.simplify();
+	return t;
+}
+
+void RationalNumber::CompareFractions(const RationalNumber &a)
+{
+	RationalNumber t;
+	RationalNumber k;
+	k.num = 0;
+
+	t.num = a.denom *num - denom * a.num;
+
+	t.simplify();
+	k.simplify();
+	cout << "\nComparison of " << num << "/" << denom << " with " << a.num << "/" << a.denom << endl;
+	if (t.num < k.num)
+	{
+		cout << "is less than: " << num << "/" << denom << " < " << a.num << "/" << a.denom << endl;
+	}
+	else if (t.num > k.num)
+	{
+		cout << "is greater than: " << num << "/" << denom << " > " << a.num << "/" << a.denom << endl;
+	}
+	else if (t.num == k.num)
+	{
+		cout << "is equal to: " << num << "/" << denom << " = " << a.num << "/" << a.denom << endl;
+	}
+	cout << endl;
+}
+void RationalNumber::printRationalNumber(void)
+{
+
+	if (denom == 0)
+	{
+		cout << "Undefined";
+	}
+	else if (num == 0)
+	{
+		cout << "0";
+	}
+	else if (denom == 1)
+	{
+		cout << num;
+	}
+	else
+		cout << num << "/" << denom;
+
+}
+void RationalNumber::simplify(void) // simplify fraction
+{
+	if (denom < 0) // checks negative
+	{
+		num *= -1;
+		denom *= -1;
+
+	} // end function check negative
+
+	int largest = num > denom ? num : denom;
+	int gcd = 0; // greatest common divisor
+
+	for (int loop = 2; loop <= largest; ++loop)
+		if (num % loop == 0 && denom % loop == 0)
+			gcd = loop;
+
+	if (gcd != 0)
+	{
+		num /= gcd;
+		denom /= gcd;
+	}
+
+} // end function reduction
+int main()
+{
+	cout << "This program does the basic arithmetics of two fractions and compares them." << endl;
+	RationalNumber number(4, 14);
+	RationalNumber number2(4, -14);
+	RationalNumber total;
+	cout << "\nFraction one:" << "\nThe first fraction's numerator is: " << number.getnum() << "\nThe first fraction's denominator is: " << number.getdenom() << endl;
+	cout << "The first fraction form is: " << number.getnum() << "/" << number.getdenom() << endl;
+	cout << "\nFraction two:" << "\nThe second fraction's numerator is: " << number2.getnum() << "\nThe second fraction's denominator is: " << number2.getdenom() << endl;
+	cout << "The second fraction form is: " << number2.getnum() << "/" << number2.getdenom() << endl;
+
+	cout << "\nBasic arithmetics of the two fractions:" << endl;
+	// Addition
+	total = number.operator+(number2); // total = fraction_1 + fraction_2
+	cout << "The sum of the two fractions ";
+	number.printRationalNumber();
+	cout << " + ";
+	number2.printRationalNumber();
+	cout << " = ";
+	total.printRationalNumber();
+	cout << endl;
+	// Subtraction
+	total = number.operator-(number2); // total = fraction_1 - fraction_2
+	cout << "The subtraction of the two fractions ";
+	number.printRationalNumber();
+	cout << " - ";
+	number2.printRationalNumber();
+	cout << " = ";
+	total.printRationalNumber();
+	cout << endl;
+	// Multiplication
+	total = number.operator*(number2); // total = fraction_1 * fraction_2
+	cout << "The multiplication of the two fractions ";
+	number.printRationalNumber();
+	cout << " * ";
+	number2.printRationalNumber();
+	cout << " = ";
+	total.printRationalNumber();
+	cout << endl;
+	// Divison
+	total = number.operator/(number2); // total = fraction_1 / fraction_2
+	cout << "The divison of the two fractions ";
+	number.printRationalNumber();
+	cout << " / ";
+	number2.printRationalNumber();
+	cout << " = ";
+	total.printRationalNumber();
+	cout << endl;
+
+	cout << "\nComparing the two fractions:";
+	number.CompareFractions(number2);
+
+	system("pause");
+	return 0;
+}
+
+/*
+Remarks:
+I approached to coding this program by first understanding that I will need to compare
+and do the basic arithmetics of two fractions. The fraction must be declared undefined
+when appropriate, be reduced/simplified when possible, and be negative or positive
+accordingly. How I approached to coding this was first by having the header class
+defined to obtain the numerator and denominator of the fractions, functions
+to do the basic arithmetics, compare, and print the outcomes. Overall, I thought
+that the coding was simple but to figure out exactly how to pass through arguments
+and making sure they are called properly can get confusing. The troubles I had
+was from mostly passing my numerator and denominator into the conditioning functions.
+*/

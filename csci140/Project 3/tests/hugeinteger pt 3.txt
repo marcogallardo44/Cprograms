@@ -1,0 +1,586 @@
+HUGEINTEGER.H
+
+#ifndef HugeInteger_H
+#define HugeInteger_H
+
+#include "stdafx.h"
+#include <array>
+#include<iostream>
+#include<string>
+
+class HugeInteger
+{
+	friend std::ostream& operator<<(std::ostream&, const HugeInteger&);
+public:
+	static const int digits{200 };//maximun digits in a HugeInteger
+
+	HugeInteger(long = 0); //conversion/default constructor
+	HugeInteger(const std::string&);//conversion constructor
+	int getLength() const;
+
+	// relational operators
+	/* Write prototype for operator > */
+	bool operator==(const HugeInteger& rhs) const;
+	bool operator!=(const HugeInteger& rhs) const;
+	bool operator>(const HugeInteger& rhs) const;
+	/* Write prototype for operator < */
+	bool operator<(const HugeInteger& rhs) const;
+	/* Write prototype for operator >= */
+	bool operator>=(const HugeInteger& rhs) const;
+	/* Write prototype for operator <= */
+	bool operator<=(const HugeInteger& rhs) const;
+
+
+	//addition operator; HugeInteger + HugeInteger
+	HugeInteger operator+(const HugeInteger&) const;
+
+	//addition operator; HugeInteger + int
+	HugeInteger operator+(int) const;
+
+	//addition operator;
+	//HugeInteger + string that represents large integer
+	HugeInteger operator+(const std::string&) const;
+
+	//subtraction operator; HugeInteger - HugeInteger
+	HugeInteger operator-(const HugeInteger&) const;
+
+	//subtraction operator; HugeInteger - int
+	HugeInteger operator-(int) const;
+
+	//subtraction operator;
+	//HugeInteger - string that represents large integer
+	HugeInteger operator-(const std::string&) const;
+
+	//HugeInteger mult
+	//addition operator; HugeInteger * HugeInteger
+	HugeInteger operator*(const HugeInteger&) const;
+
+	//addition operator; HugeInteger * int
+	HugeInteger operator*(int) const;
+
+	//addition operator;
+	//HugeInteger / string that represents large integer
+	HugeInteger operator*(const std::string&) const;
+
+	//HugeInteger division
+	//addition operator; HugeInteger / HugeInteger
+	HugeInteger operator/(const HugeInteger&) const;
+
+	//addition operator; HugeInteger / int
+	HugeInteger operator/(int) const;
+
+	//addition operator;
+	//HugeInteger / string that represents large integer
+	HugeInteger operator/(const std::string&) const;
+
+
+
+
+
+
+
+
+private:
+	std::array<short, digits> integer{};//default init to 0s
+};
+#endif
+
+-----------------------------------------------------------------------------
+HUGEINTEGER.CPP
+
+#include "stdafx.h"
+#include<cctype>//isdigit function prototype
+#include <vector>
+#include <string>
+#include "HugeInteger.h"
+using namespace std;
+
+//default constructorl conversion constructor that converts
+//a long integer into a HugeInteger object
+HugeInteger::HugeInteger(long value)
+{
+	//place digits of arguement into array
+	for (int j{ digits - 1 }; value != 0 && j >= 0; j--)
+	{
+		integer[j] = value % 10;
+		value /= 10;
+	}
+	
+}
+
+//conversion constructor that converts a character string
+//representing a large integer into a HugeInteger object
+HugeInteger::HugeInteger(const string& number)
+{
+	//place digits of argument into array
+
+	int size = number.size();
+	int length{ size };
+
+	for (int j{ digits - length }, k{ 0 }; j < digits; ++j, ++k)
+	{
+		if (isdigit(number[k]))
+		{
+			//ensure that character is a digit
+			integer[j] = number[k] - '0';
+		}
+	}
+	
+}
+
+int HugeInteger::getLength() const
+{
+	int i;
+
+	for (i = 0; i <= 40; i++)
+		if (integer[i] != 0)
+			break; // break when first digit is reached
+	int size = 40 - i;
+	return size; // length is from first digit (at i) to end of array
+} // end function getLength
+
+  /* Write a definition for the == operator */
+bool HugeInteger::operator==(const HugeInteger& rhs) const
+{
+	bool ans = false;
+
+	int size = getLength();
+	int size2 = rhs.getLength();
+	HugeInteger temp;
+	
+	for (int i = 199; i >=0; i--)
+	{
+		temp.integer[i] = integer[i];
+		
+		if (temp.integer[i] != rhs.integer[i])
+			ans = true;
+		else
+			ans = false;
+	}
+	return ans;
+}
+// inequality operator; HugeInt != HugeInt
+/* Write a definition for the != operator
+by calling the == operator */
+bool HugeInteger::operator!=(const HugeInteger& rhs) const
+{
+
+	return !(*this == rhs);
+}
+// less than operator; HugeInt < HugeInt
+/* Write a definition for the < operator */
+bool HugeInteger::operator<(const HugeInteger& rhs) const
+{
+	int size = getLength();
+	int size2 = rhs.getLength();
+	bool ans = false;
+
+	HugeInteger temp;
+	
+
+	for (int i = 199; i >= 0; i--)
+	{
+		temp.integer[i] = integer[i];
+		if (temp.integer[i] < rhs.integer[i])
+			ans = false;
+		else
+			ans = true;
+	}
+	return ans;
+}
+// less than or equal operator; HugeInt <= HugeInt
+/* Write a definition for the <= operator
+by calling the < and == operators */
+bool HugeInteger::operator<=(const HugeInteger& rhs) const
+{
+	return (*this == rhs && *this < rhs);
+}
+// greater than operator; HugeInt > HugeInt
+/* Write a definition for the > operator
+by calling the <= operator */
+bool HugeInteger::operator>(const HugeInteger& rhs) const
+{
+	
+	return (*this <= rhs);
+}
+// greater than or equal operator; HugeInt >= HugeInt
+/* Write a definition for the >= operator
+by calling the > and == operators */
+bool HugeInteger::operator>=(const HugeInteger& rhs) const
+{
+	return (*this == rhs && *this > rhs);
+}
+
+//addition operator; HugeInteger + HugeInteger
+HugeInteger HugeInteger::operator+(const HugeInteger& op2) const
+{
+	HugeInteger temp;//temporary result
+	int carry = 0;
+	for (int i{ digits - 1 }; i >= 0; i--)
+	{
+		temp.integer[i] = integer[i] + op2.integer[i] + carry;
+
+
+		//determin whether to carry a 1
+		if (temp.integer[i] > 9)
+		{
+			temp.integer[i] %= 10;//reduce to 0-9
+			carry = 1;
+		}
+		else
+			carry = 0; //no carry
+	}
+	
+	return temp;//return copy of temporary object
+
+}
+
+//addition operator; HugeInteger + int
+HugeInteger HugeInteger::operator+(int op2) const
+{
+	//convert op2 to a HugeInteger, then invoke
+	//operator+ for two HugeInteger objects
+	
+	return *this + HugeInteger(op2);
+}
+
+//addition operator
+//HugeInteger+string that represents large integer value
+HugeInteger HugeInteger::operator+(const string& op2) const
+{
+	//convert op2 to a HugeInteger, then invoke
+	//operator+ for two HugeIntger objects
+	
+	return *this + HugeInteger(op2);
+}
+
+//subtraction
+HugeInteger HugeInteger::operator-(const HugeInteger& op2) const
+{
+	HugeInteger temp;//temporary result
+	int carry = 0;
+	for (int i{ digits - 1 }; i >= 0; i--)
+	{
+		if (integer[i] > op2.integer[i])
+		{
+			temp.integer[i] = integer[i] - op2.integer[i] + carry;
+		}
+		else
+		{
+			temp.integer[i] = op2.integer[i] - integer[i] + carry;
+			
+		}
+		//determin whether to carry a 1
+		if (temp.integer[i] > 9)
+		{
+			temp.integer[i] %= 10;//reduce to 0-9
+			carry = 1;
+		}
+		else
+			carry = 0; //no carry
+	}
+
+	return temp;//return copy of temporary object
+
+}
+
+//addition operator; HugeInteger - int
+HugeInteger HugeInteger::operator-(int op2) const
+{
+	//convert op2 to a HugeInteger, then invoke
+	//operator+ for two HugeInteger objects
+
+	return *this - HugeInteger(op2);
+}
+
+//addition operator
+//HugeInteger - string that represents large integer value
+HugeInteger HugeInteger::operator-(const string& op2) const
+{
+	//convert op2 to a HugeInteger, then invoke
+	//operator+ for two HugeIntger objects
+
+	return *this - HugeInteger(op2);
+}
+
+
+
+//addition operator; HugeInteger * HugeInteger
+HugeInteger HugeInteger::operator*(const HugeInteger& op2) const
+{
+	HugeInteger temp;
+	HugeInteger temp2;
+	int n1 = integer.size();
+
+	int n2 = op2.integer.size();
+	if (n1 == 0 || n2 == 0)
+		return "0";
+
+
+	// will keep the result number in vector
+	// in reverse order
+	vector<int> result(n1 + n2, 0);
+
+	// Below two indexes are used to find positions
+	// in result. 
+	int i_n1 = 0;
+	int i_n2 = 0;
+
+	// Go from right to left in num1
+	for (int i = integer.size() - 1; i >= 0; i--)
+	{
+		int carry = 0;
+		integer[i] - '0';
+
+		// To shift position to left after every
+		// multiplication of a digit in num2
+		i_n2 = 0;
+
+		// Go from right to left in num2             
+		for (int j = op2.integer.size() - 1; j >= 0; j--)
+		{
+			// Take current digit of second number
+
+
+
+			// Multiply with current digit of first number
+			// and add result to previously stored result
+			// at current position. 
+			int sum = integer[i] * op2.integer[j] + result[i_n1 + i_n2] + carry;
+
+			// Carry for next iteration
+			carry = sum / 10;
+
+			// Store result
+			result[i_n1 + i_n2] = sum % 10;
+
+			i_n2++;
+		}
+
+		// store carry in next cell
+		if (carry > 0)
+			result[i_n1 + i_n2] += carry;
+
+
+
+		
+		// To shift position to left after every
+		// multiplication of a digit in num1.
+		i_n1++;
+	}
+	cout << endl;
+	// ignore '0's from the right
+	int i = result.size() - 1;
+	while (i >= 0 && result[i] == 0)
+		i--;
+
+	for (i; i >= 0; i--)
+	{
+		temp2.integer[i] = result[i];
+		cout << temp2.integer[i];
+	}
+	cout << endl;
+
+	temp = temp2;
+
+
+
+	return temp;
+}
+
+//addition operator; HugeInteger * int
+HugeInteger HugeInteger::operator*(int op2) const
+{
+	//convert op2 to a HugeInteger, then invoke
+	//operator+ for two HugeInteger objects
+	return *this * HugeInteger(op2);
+}
+
+//addition operator
+//HugeInteger+string that represents large integer value
+HugeInteger HugeInteger::operator*(const string& op2) const
+{
+	//convert op2 to a HugeInteger, then invoke
+	//operator+ for two HugeIntger objects
+	return *this * HugeInteger(op2);
+}
+
+
+//divsion not working work on other shit
+
+HugeInteger HugeInteger::operator/(const HugeInteger& op2) const
+// A function to perform division of large numbersHugeInteger HugeInteger::operator/(const HugeInteger& op2) const
+{
+	HugeInteger sum = op2;
+	HugeInteger sum2 = *this;
+	int ans = 1;
+	if (sum < *this)
+	{
+		while (sum < *this)
+		{
+			sum = sum + op2;
+			++ans;
+		}
+	}
+	else
+	{
+		while (sum2 < op2)
+		{
+			sum2 = sum2 + *this;
+			++ans;
+		}
+	}
+	HugeInteger result(ans);
+	return result;
+}
+
+
+HugeInteger HugeInteger::operator/(int op2) const
+{
+	//convert op2 to a HugeInteger, then invoke
+	//operator+ for two HugeInteger objects
+	return *this / HugeInteger(op2);
+}
+
+//addition operator
+//HugeInteger+string that represents large integer value
+HugeInteger HugeInteger::operator/(const string& op2) const
+{
+	//convert op2 to a HugeInteger, then invoke
+	//operator+ for two HugeIntger objects
+	return *this / HugeInteger(op2);
+}
+
+
+//overloaded output operator
+ostream& operator<<(ostream& output, const HugeInteger& num)
+{
+	int i;
+
+	//skip leading zeros
+	for (i = 0; (i < HugeInteger::digits) && (0 == num.integer[i]); ++i) {}
+
+	if (i == HugeInteger::digits)
+	{
+		output << 0;
+	}
+	else
+	{
+		for (; i < HugeInteger::digits; ++i)
+		{
+			output << num.integer[i];
+		}
+	}
+
+	return output;
+}
+
+----------------------------------------------------------------------------------------------
+HUGEINTEGERTEST.CPP
+
+#include "stdafx.h"
+#include<iostream>
+#include "HugeInteger.h"
+using namespace std;
+
+
+int main()
+{
+	/*TEST
+	A=123
+	B= 999
+
+	M= 12345654321
+	N= 111
+
+	m= 11111111114444444444
+	n= 222
+
+	X= 99999999991111111111888888888822222222225555555555
+	Y= 22222222228888888888444444444477777777776666666666
+
+	*/
+
+
+
+
+	HugeInteger A{ 123 };
+	HugeInteger B{ 999};
+	HugeInteger M{ "12345654321" };
+	HugeInteger N{ 222 };
+	HugeInteger m{ "11111111114444444444" };
+	HugeInteger n{ 222 };
+	HugeInteger x{ "99999999991111111111888888888822222222225555555555" };
+	HugeInteger y{ "22222222228888888888444444444477777777776666666666" };
+	HugeInteger z;
+
+	cout << "A is " << A << "\nB is " << B
+		<< "\nM is " << M << "\nN is " << N
+		<< "\nm is " << m << "\nn is " << n 
+		<< "\nx is "<< x << "\ny is " << y
+		<<"\n\n";
+
+	// test relational and equality operators
+	if (A == B)
+		cout << "A equals B" << endl;
+
+	if (A != B)
+		cout << "A is not equal to B" << endl;
+
+	if (A < B)
+		cout << "A is less than B" << endl;
+
+	if (A <= B)
+		cout << "A is less than or equal to B" << endl;
+
+	if (A > B)
+		cout << "A is greater than B" << endl;
+
+	if (A >= B)
+		cout << "A is greater than or equal to B" << "\n\n";
+		
+
+
+	z = A + B;
+	cout << A << " + " << B << " = " << z << "\n\n";
+
+	z = A - B;
+	cout << A << " - " << B << " = " << z << "\n\n";
+
+	cout << A << " * " << B << "= ";
+	(A * B);
+	cout << "\n";
+
+	z = M + N;
+	cout << M << " + " << N << " = " << z << "\n\n";
+
+	z = M - N;
+	cout << M << " - " << N << " = " << z << "\n\n";
+	
+	cout << M << " * " << N << " = ";
+	z=M*N;
+	cout << "\n";
+
+	z = m+n;
+	cout << m << " + " << n << " = " << z << "\n\n";
+
+	z = m - n;
+	cout << m << " - " << n << " = " << z << "\n\n";
+	
+	cout << m << " * " << n << " = ";
+	z = m * n;
+	cout << "\n";
+
+	z = x+y;
+	cout << x << " + " << y << " =\n" << z << "\n\n";
+
+	z = x - y;
+	cout << x << " - " << y << " =\n" << z << "\n\n";
+
+	cout << x << " * " << y << " = ";
+	z = x * y;
+	cout << "\n";
+
+	system("pause");
+	return 0;
+}

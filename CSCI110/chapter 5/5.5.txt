@@ -1,0 +1,56 @@
+// ConsoleApplication8.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+#include <string>
+
+using namespace std;
+
+int first_digit(int n)
+{
+	if (n < 10)
+	{
+		return n;
+	}
+	else
+	{
+		return first_digit(n / 10);
+	}
+
+}
+int last_digit(int n)
+{
+	return n % 10;
+}
+int digits(int n)
+{
+	if (n < 10)
+	{
+		return 1;
+	}
+	else
+	{
+		return 1 + digits(n / 10);
+	}
+}
+
+
+
+int main()
+{
+	int n;
+
+	cout << "input numbers: ";
+	cin >> n;
+
+	cout << first_digit(n) << endl;
+	cout << digits(n) << endl;
+	cout << last_digit(n) << endl;
+
+
+	system("pause");
+	return 0;
+}
+

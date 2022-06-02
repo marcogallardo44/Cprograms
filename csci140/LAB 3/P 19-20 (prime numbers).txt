@@ -1,0 +1,44 @@
+// ConsoleApplication2.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+
+using namespace std;
+/* Write a function prototype for function even, which takes an int parameter
+and returns a bool */
+int even(int);
+
+int main()
+{
+	int x; // current input
+		   // loop for 3 inputs
+	for (int i = 1; i <= 3; i++)
+	{
+		cout << "Enter an integer: ";
+		cin >> x;
+		// determine if input is even
+		if ( /* Write a call to function even to determine if x is even */even(x))
+			cout << x << " is an even integer\n\n";
+		else
+			cout << x << " is an odd integer\n\n";
+	} // end for
+	cout << endl;
+
+
+
+	system("pause");
+    return 0;
+}
+/* Define function even. Use the modulus operator to determine if an integer
+is evenly divisible by two. */
+int even(int x)
+{
+	if (x % 2 == 0)
+	{
+		return true;
+	}
+	else
+		return false;
+}

@@ -1,0 +1,10 @@
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (factorial)\HW 4 (factorial)\bin\Debug\HW 4 (factorial).exe.config
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (factorial)\HW 4 (factorial)\bin\Debug\HW 4 (factorial).exe
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (factorial)\HW 4 (factorial)\bin\Debug\HW 4 (factorial).pdb
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (factorial)\HW 4 (factorial)\obj\Debug\HW 4 (factorial).csprojAssemblyReference.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (factorial)\HW 4 (factorial)\obj\Debug\HW_4__factorial_.Form1.resources
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (factorial)\HW 4 (factorial)\obj\Debug\HW_4__factorial_.Properties.Resources.resources
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (factorial)\HW 4 (factorial)\obj\Debug\HW 4 (factorial).csproj.GenerateResource.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (factorial)\HW 4 (factorial)\obj\Debug\HW 4 (factorial).csproj.CoreCompileInputs.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (factorial)\HW 4 (factorial)\obj\Debug\HW 4 (factorial).exe
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 4\HW 4 (factorial)\HW 4 (factorial)\obj\Debug\HW 4 (factorial).pdb

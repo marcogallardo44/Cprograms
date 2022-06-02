@@ -1,0 +1,69 @@
+// ConsoleApplication7.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+
+using namespace std;
+
+int input(double scores[], int capacity)
+{
+	const int CAPACITY = 1000;
+	scores[CAPACITY];
+	int current_size = 0;
+
+	cout << "Please enter values, Q to quit:" << endl;
+	double input;
+	while (cin >> input)
+	{
+		if (current_size < CAPACITY)
+		{
+			scores[current_size] = input;
+			current_size++;
+		}
+	}
+	cout << endl;
+	return current_size;
+}
+
+void sort2(double* p1, double* p2)
+{
+	if (p1[0] <= p2[0])
+	{
+		return;
+	}
+	else
+	{
+		double temp = p1[0];
+		p1[0] = p2[0];
+		p2[0] = temp;
+
+		cout << p1[0] << ", " << p2[0];
+		return;
+	}
+}
+
+
+
+
+int main()
+{
+	const int capacity = 1000;
+	double scores[capacity];
+
+	int size = input(scores, capacity);
+
+	double* p1;
+	double* p2;
+	p1 = scores;
+	p2 = scores + 1;
+	
+	cout << "switched: "; sort2(p1, p2);
+	cout << endl;
+
+
+	system("pause");
+    return 0;
+}
+

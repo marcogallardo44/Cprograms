@@ -1,0 +1,11 @@
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 10\HW 10 (student hierarchy)\HW 10 (student hierarchy)\bin\Debug\netcoreapp3.0\HW 10 (student hierarchy).exe
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 10\HW 10 (student hierarchy)\HW 10 (student hierarchy)\bin\Debug\netcoreapp3.0\HW 10 (student hierarchy).deps.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 10\HW 10 (student hierarchy)\HW 10 (student hierarchy)\bin\Debug\netcoreapp3.0\HW 10 (student hierarchy).runtimeconfig.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 10\HW 10 (student hierarchy)\HW 10 (student hierarchy)\bin\Debug\netcoreapp3.0\HW 10 (student hierarchy).runtimeconfig.dev.json
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 10\HW 10 (student hierarchy)\HW 10 (student hierarchy)\bin\Debug\netcoreapp3.0\HW 10 (student hierarchy).dll
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 10\HW 10 (student hierarchy)\HW 10 (student hierarchy)\bin\Debug\netcoreapp3.0\HW 10 (student hierarchy).pdb
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 10\HW 10 (student hierarchy)\HW 10 (student hierarchy)\obj\Debug\netcoreapp3.0\HW 10 (student hierarchy).csprojAssemblyReference.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 10\HW 10 (student hierarchy)\HW 10 (student hierarchy)\obj\Debug\netcoreapp3.0\HW 10 (student hierarchy).AssemblyInfoInputs.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 10\HW 10 (student hierarchy)\HW 10 (student hierarchy)\obj\Debug\netcoreapp3.0\HW 10 (student hierarchy).AssemblyInfo.cs
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 10\HW 10 (student hierarchy)\HW 10 (student hierarchy)\obj\Debug\netcoreapp3.0\HW 10 (student hierarchy).dll
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 10\HW 10 (student hierarchy)\HW 10 (student hierarchy)\obj\Debug\netcoreapp3.0\HW 10 (student hierarchy).pdb

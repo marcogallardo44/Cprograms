@@ -1,0 +1,64 @@
+// marcocarproblem.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	const int YEAR = 10;
+	const int GAS_PRICE = 4;
+	const int TOTAL_MILES = 15000;
+	int CAR1;
+	int CAR2;
+	int MPG1;
+	int MPG2;
+	int GAS_USAGE_FEE1;
+	int GAS_USAGE_FEE2;
+	int TOTAL1;
+	int TOTAL2;
+	int MAINT1;
+	int MAINT2;
+	cout << "Please enter the value of CAR1 ";
+	cin >> CAR1;
+	
+	cout << "Please enter the value of MPG1 ";
+	cin >> MPG1;
+	
+	cout << "Please enter the value of CAR2 ";
+	cin >> CAR2;
+	
+	cout << "Please enter the value of MPG2 ";
+	cin >> MPG2;
+
+	cout << "Please enter the value of MAINT1 ";
+	cin >> MAINT1;
+	
+	cout << "Please enter the value of MAINT2 ";
+	cin >> MAINT2;
+	
+	GAS_USAGE_FEE1 = TOTAL_MILES*YEAR*GAS_PRICE/MPG1;
+	cout << "The cost of gas usage for CAR1 is " << GAS_USAGE_FEE1 << endl;
+	
+	GAS_USAGE_FEE2 = TOTAL_MILES*YEAR*GAS_PRICE/MPG2;
+	cout << "The cost of gas usage for CAR2 is " << GAS_USAGE_FEE2 << endl;
+	
+	TOTAL1 = CAR1 + GAS_USAGE_FEE1 + MAINT1;
+	cout << "The total of CAR1 + GAS_USAGE_FEE1 + MAINT1 is " << TOTAL1 << endl;
+	
+	TOTAL2 = CAR2 + GAS_USAGE_FEE2 + MAINT2;
+	cout << "The total of CAR2 + GAS_USAGE_FEE2 + MAINT2 is " << TOTAL2 << endl;
+	if (TOTAL1 < TOTAL2)
+	{
+		cout << "Buy car 2 " << endl;
+	}
+	else
+	{
+		cout << "Buy car 2 " << endl;
+	}
+	system("pause");
+	return 0;
+}
+

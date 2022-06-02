@@ -1,0 +1,20 @@
+C:\Users\magallardo1\Desktop\quiz1 BMI calc\quiz1 BMI calc\bin\Debug\quiz1 BMI calc.exe.config
+C:\Users\magallardo1\Desktop\quiz1 BMI calc\quiz1 BMI calc\bin\Debug\quiz1 BMI calc.exe
+C:\Users\magallardo1\Desktop\quiz1 BMI calc\quiz1 BMI calc\bin\Debug\quiz1 BMI calc.pdb
+C:\Users\magallardo1\Desktop\quiz1 BMI calc\quiz1 BMI calc\obj\Debug\quiz1 BMI calc.csprojAssemblyReference.cache
+C:\Users\magallardo1\Desktop\quiz1 BMI calc\quiz1 BMI calc\obj\Debug\quiz1_BMI_calc.Form1.resources
+C:\Users\magallardo1\Desktop\quiz1 BMI calc\quiz1 BMI calc\obj\Debug\quiz1_BMI_calc.Properties.Resources.resources
+C:\Users\magallardo1\Desktop\quiz1 BMI calc\quiz1 BMI calc\obj\Debug\quiz1 BMI calc.csproj.GenerateResource.cache
+C:\Users\magallardo1\Desktop\quiz1 BMI calc\quiz1 BMI calc\obj\Debug\quiz1 BMI calc.csproj.CoreCompileInputs.cache
+C:\Users\magallardo1\Desktop\quiz1 BMI calc\quiz1 BMI calc\obj\Debug\quiz1 BMI calc.exe
+C:\Users\magallardo1\Desktop\quiz1 BMI calc\quiz1 BMI calc\obj\Debug\quiz1 BMI calc.pdb
+D:\Marco USB Backup\C#\quiz1 BMI calc\quiz1 BMI calc\bin\Debug\quiz1 BMI calc.exe.config
+D:\Marco USB Backup\C#\quiz1 BMI calc\quiz1 BMI calc\bin\Debug\quiz1 BMI calc.exe
+D:\Marco USB Backup\C#\quiz1 BMI calc\quiz1 BMI calc\bin\Debug\quiz1 BMI calc.pdb
+D:\Marco USB Backup\C#\quiz1 BMI calc\quiz1 BMI calc\obj\Debug\quiz1 BMI calc.csprojAssemblyReference.cache
+D:\Marco USB Backup\C#\quiz1 BMI calc\quiz1 BMI calc\obj\Debug\quiz1_BMI_calc.Form1.resources
+D:\Marco USB Backup\C#\quiz1 BMI calc\quiz1 BMI calc\obj\Debug\quiz1_BMI_calc.Properties.Resources.resources
+D:\Marco USB Backup\C#\quiz1 BMI calc\quiz1 BMI calc\obj\Debug\quiz1 BMI calc.csproj.GenerateResource.cache
+D:\Marco USB Backup\C#\quiz1 BMI calc\quiz1 BMI calc\obj\Debug\quiz1 BMI calc.csproj.CoreCompileInputs.cache
+D:\Marco USB Backup\C#\quiz1 BMI calc\quiz1 BMI calc\obj\Debug\quiz1 BMI calc.exe
+D:\Marco USB Backup\C#\quiz1 BMI calc\quiz1 BMI calc\obj\Debug\quiz1 BMI calc.pdb

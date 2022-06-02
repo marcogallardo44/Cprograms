@@ -1,0 +1,10 @@
+D:\Marco USB Backup\C#\Math practice\Math practice\obj\Debug\Math practice.csprojAssemblyReference.cache
+D:\Marco USB Backup\C#\Math practice\Math practice\obj\Debug\Math_practice.Form1.resources
+D:\Marco USB Backup\C#\Math practice\Math practice\obj\Debug\Math_practice.Properties.Resources.resources
+D:\Marco USB Backup\C#\Math practice\Math practice\obj\Debug\Math practice.csproj.GenerateResource.cache
+D:\Marco USB Backup\C#\Math practice\Math practice\obj\Debug\Math practice.csproj.CoreCompileInputs.cache
+D:\Marco USB Backup\C#\Math practice\Math practice\bin\Debug\Math practice.exe.config
+D:\Marco USB Backup\C#\Math practice\Math practice\bin\Debug\Math practice.exe
+D:\Marco USB Backup\C#\Math practice\Math practice\bin\Debug\Math practice.pdb
+D:\Marco USB Backup\C#\Math practice\Math practice\obj\Debug\Math practice.exe
+D:\Marco USB Backup\C#\Math practice\Math practice\obj\Debug\Math practice.pdb

@@ -1,0 +1,10 @@
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (take home pay)\HW 7 (take home pay)\bin\Debug\HW 7 (take home pay).exe.config
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (take home pay)\HW 7 (take home pay)\bin\Debug\HW 7 (take home pay).exe
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (take home pay)\HW 7 (take home pay)\bin\Debug\HW 7 (take home pay).pdb
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (take home pay)\HW 7 (take home pay)\obj\Debug\HW 7 (take home pay).csprojAssemblyReference.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (take home pay)\HW 7 (take home pay)\obj\Debug\HW_7__take_home_pay_.Form1.resources
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (take home pay)\HW 7 (take home pay)\obj\Debug\HW_7__take_home_pay_.Properties.Resources.resources
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (take home pay)\HW 7 (take home pay)\obj\Debug\HW 7 (take home pay).csproj.GenerateResource.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (take home pay)\HW 7 (take home pay)\obj\Debug\HW 7 (take home pay).csproj.CoreCompileInputs.cache
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (take home pay)\HW 7 (take home pay)\obj\Debug\HW 7 (take home pay).exe
+C:\Users\Marco Gallardo\Desktop\Marco USB Backup\C#\Homework 7\HW 7 (take home pay)\HW 7 (take home pay)\obj\Debug\HW 7 (take home pay).pdb

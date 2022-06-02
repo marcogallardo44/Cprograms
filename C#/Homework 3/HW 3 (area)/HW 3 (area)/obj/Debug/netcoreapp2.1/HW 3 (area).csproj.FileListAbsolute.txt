@@ -1,0 +1,11 @@
+C:\Users\magallardo1\Desktop\HW 3 (area)\HW 3 (area)\bin\Debug\netcoreapp2.1\HW 3 (area).deps.json
+C:\Users\magallardo1\Desktop\HW 3 (area)\HW 3 (area)\bin\Debug\netcoreapp2.1\HW 3 (area).runtimeconfig.json
+C:\Users\magallardo1\Desktop\HW 3 (area)\HW 3 (area)\bin\Debug\netcoreapp2.1\HW 3 (area).runtimeconfig.dev.json
+C:\Users\magallardo1\Desktop\HW 3 (area)\HW 3 (area)\bin\Debug\netcoreapp2.1\HW 3 (area).dll
+C:\Users\magallardo1\Desktop\HW 3 (area)\HW 3 (area)\bin\Debug\netcoreapp2.1\HW 3 (area).pdb
+C:\Users\magallardo1\Desktop\HW 3 (area)\HW 3 (area)\obj\Debug\netcoreapp2.1\HW 3 (area).csprojAssemblyReference.cache
+C:\Users\magallardo1\Desktop\HW 3 (area)\HW 3 (area)\obj\Debug\netcoreapp2.1\HW 3 (area).csproj.CoreCompileInputs.cache
+C:\Users\magallardo1\Desktop\HW 3 (area)\HW 3 (area)\obj\Debug\netcoreapp2.1\HW 3 (area).AssemblyInfoInputs.cache
+C:\Users\magallardo1\Desktop\HW 3 (area)\HW 3 (area)\obj\Debug\netcoreapp2.1\HW 3 (area).AssemblyInfo.cs
+C:\Users\magallardo1\Desktop\HW 3 (area)\HW 3 (area)\obj\Debug\netcoreapp2.1\HW 3 (area).dll
+C:\Users\magallardo1\Desktop\HW 3 (area)\HW 3 (area)\obj\Debug\netcoreapp2.1\HW 3 (area).pdb
